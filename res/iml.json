@@ -1,0 +1,6483 @@
+{
+  "nested": {
+    "iamlive": {
+      "nested": {
+        "msgType": {
+          "values": {
+            "E_MSG_TYPE_START": 0,
+            "E_SIGNUP_RQT": 1,
+            "E_SIGNUP_RSP": 2,
+            "E_ACTIVATE_RQT": 3,
+            "E_ACTIVATE_RSP": 4,
+            "E_USER_JOINED_RQT": 5,
+            "E_USER_JOINED_RSP": 6,
+            "E_LOGIN_RQT": 7,
+            "E_LOGIN_RSP": 8,
+            "E_CHAT_RQT": 9,
+            "E_CHAT_RSP": 10,
+            "E_CHAT_DELIVERY_RQT": 11,
+            "E_CHAT_DELIVERY_RSP": 12,
+            "E_CHAT_READ_RQT": 13,
+            "E_CHAT_READ_RSP": 14,
+            "E_CALL_START_RQT": 15,
+            "E_CALL_START_RSP": 16,
+            "E_CALL_END_RQT": 17,
+            "E_CALL_END_RSP": 18,
+            "E_ADD_NUM_RQT": 19,
+            "E_ADD_NUM_RSP": 20,
+            "E_IS_APP_CONTACT_RQT": 21,
+            "E_IS_APP_CONTACT_RSP": 22,
+            "E_GET_CONTACTS_RQT": 23,
+            "E_GET_CONTACTS_RSP": 24,
+            "E_DELETE_NUM_RQT": 25,
+            "E_DELETE_NUM_RSP": 26,
+            "E_BLOCK_NUM_RQT": 27,
+            "E_BLOCK_NUM_RSP": 28,
+            "E_UNBLOCK_NUM_RQT": 29,
+            "E_UNBLOCK_NUM_RSP": 30,
+            "E_CREATE_GROUP_RQT": 31,
+            "E_CREATE_GROUP_RSP": 32,
+            "E_DELETE_GROUP_RQT": 33,
+            "E_DELETE_GROUP_RSP": 34,
+            "E_UPDATE_GROUP_INFO_RQT": 35,
+            "E_UPDATE_GROUP_INFO_RSP": 36,
+            "E_ADD_USERS_TO_GROUP_RQT": 37,
+            "E_ADD_USERS_TO_GROUP_RSP": 38,
+            "E_DEL_USERS_TO_GROUP_RQT": 39,
+            "E_DEL_USERS_TO_GROUP_RSP": 40,
+            "E_EXIT_FROM_GROUP_RQT": 41,
+            "E_EXIT_FROM_GROUP_RSP": 42,
+            "E_BLOCK_GROUP_RQT": 43,
+            "E_BLOCK_GROUP_RSP": 44,
+            "E_UNBLOCK_GROUP_RQT": 45,
+            "E_UNBLOCK_GROUP_RSP": 46,
+            "E_USER_ADDED_TO_GROUP_RQT": 47,
+            "E_USER_ADDED_TO_GROUP_RSP": 48,
+            "E_USER_DELETED_TO_GROUP_RQT": 49,
+            "E_USER_DELETED_TO_GROUP_RSP": 50,
+            "E_PULL_MY_GROUP_LIST_RQT": 51,
+            "E_PULL_MY_GROUP_LIST_RSP": 52,
+            "E_PULL_MY_GROUP_DETAILS_RQT": 53,
+            "E_PULL_MY_GROUP_DETAILS_RSP": 54,
+            "E_GROUP_CHAT_RQT": 55,
+            "E_GROUP_CHAT_RSP": 56,
+            "E_GROUP_CHAT_DELIVERY_RQT": 57,
+            "E_GROUP_CHAT_DELIVERY_RSP": 58,
+            "E_GROUP_CHAT_READ_RQT": 59,
+            "E_GROUP_CHAT_READ_RSP": 60,
+            "E_GET_PRESENCE_RQT": 61,
+            "E_GET_PRESENCE_RSP": 62,
+            "E_SET_PROFILE_RQT": 63,
+            "E_SET_PROFILE_RSP": 64,
+            "E_GET_PROFILE_RQT": 65,
+            "E_GET_PROFILE_RSP": 66,
+            "E_ADD_ADMINS_TO_GROUP_RQT": 67,
+            "E_ADD_ADMINS_TO_GROUP_RSP": 68,
+            "E_ADMIN_ADDED_TO_GROUP_RQT": 69,
+            "E_ADMIN_ADDED_TO_GROUP_RSP": 70,
+            "E_DEL_ADMINS_TO_GROUP_RQT": 71,
+            "E_DEL_ADMINS_TO_GROUP_RSP": 72,
+            "E_ADMIN_DELETED_TO_GROUP_RQT": 73,
+            "E_ADMIN_DELETED_TO_GROUP_RSP": 74,
+            "E_GROUP_DELETED_TO_GROUP_RQT": 75,
+            "E_GROUP_DELETED_TO_GROUP_RSP": 76,
+            "E_USER_EXITED_TO_GROUP_RQT": 77,
+            "E_USER_EXITED_TO_GROUP_RSP": 78,
+            "E_UPDATED_INFO_TO_GROUP_RQT": 79,
+            "E_UPDATED_INFO_TO_GROUP_RSP": 80,
+            "E_USER_PROFILE_CHANGED_RQT": 81,
+            "E_USER_PROFILE_CHANGED_RSP": 82,
+            "E_USER_PENDING_NOTIFICATIONS_RQT": 83,
+            "E_USER_PENDING_NOTIFICATIONS_RSP": 84,
+            "E_GET_MY_PENDING_NOTIFICATIONS_RQT": 85,
+            "E_GET_MY_PENDING_NOTIFICATIONS_RSP": 86,
+            "E_SEND_ICE_CANDIDATES_IN_CALL_RQT": 185,
+            "E_SEND_ICE_CANDIDATES_IN_CALL_RSP": 186,
+            "E_CALL_ANSWER_RQT": 187,
+            "E_CALL_ANSWER_RSP": 188,
+            "E_REGISTER_SIP_USER_RQT": 189,
+            "E_REGISTER_SIP_USER_RSP": 190,
+            "E_SIP_USER_EVENT_RQT": 191,
+            "E_SIP_USER_EVENT_RSP": 192,
+            "E_CALL_SESSION_IN_PROGRESS_SDP_RQT": 193,
+            "E_CALL_SESSION_IN_PROGRESS_SDP_RSP": 194,
+            "E_DIRECT_AUDIO_VIDEO_CALL_START_RQT": 195,
+            "E_DIRECT_AUDIO_VIDEO_CALL_START_RSP": 196,
+            "E_DIRECT_AUDIO_VIDEO_CALL_ANSWER_RQT": 197,
+            "E_DIRECT_AUDIO_VIDEO_CALL_ANSWER_RSP": 198,
+            "E_DIRECT_AUDIO_VIDEO_CALL_END_RQT": 199,
+            "E_DIRECT_AUDIO_VIDEO_CALL_END_RSP": 200,
+            "E_GET_TURN_SERVER_CREDENTIALS_RQT": 201,
+            "E_GET_TURN_SERVER_CREDENTIALS_RSP": 202,
+            "E_SEND_ICE_CANDIDATES_IN_DIRECT_AV_CALL_RQT": 203,
+            "E_SEND_ICE_CANDIDATES_IN_DIRECT_AV_CALL_RSP": 204,
+            "E_CALL_ENDED_RQT": 205,
+            "E_CALL_ENDED_RSP": 206,
+            "E_OP_CODE_ADMIN_LOGIN_RQT": 207,
+            "E_OP_CODE_ADMIN_LOGIN_RSP": 208,
+            "E_BRAND_USER_LOGIN_RQT": 209,
+            "E_BRAND_USER_LOGIN_RSP": 210,
+            "E_GENERATE_BRAND_PIN_RQT": 211,
+            "E_GENERATE_BRAND_PIN_RSP": 212,
+            "E_UPDATE_BRAND_PIN_DETAILS_RQT": 213,
+            "E_UPDATE_BRAND_PIN_DETAILS_RSP": 214,
+            "E_GET_BRAND_NAME_RQT": 215,
+            "E_GET_BRAND_NAME_RSP": 216,
+            "E_GET_ALL_BRAND_PIN_DETAILS_RQT": 217,
+            "E_GET_ALL_BRAND_PIN_DETAILS_RSP": 218,
+            "E_ADD_SERVER_DETAILS_RQT": 219,
+            "E_ADD_SERVER_DETAILS_RSP": 220,
+            "E_GET_SERVER_DETAILS_COUNT_RQT": 221,
+            "E_GET_SERVER_DETAILS_COUNT_RSP": 222,
+            "E_GET_SERVER_DETAILS_RQT": 223,
+            "E_GET_SERVER_DETAILS_RSP": 224,
+            "E_DEL_SERVER_DETAILS_RQT": 225,
+            "E_DEL_SERVER_DETAILS_RSP": 226,
+            "E_GET_CONCURRENT_CALLS_COUNT_RQT": 227,
+            "E_GET_CONCURRENT_CALLS_COUNT_RSP": 228,
+            "E_SEND_DTMF_TONE_IN_CALL_RQT": 229,
+            "E_SEND_DTMF_TONE_IN_CALL_RSP": 230,
+            "E_UPDATE_BRAND_PIN_URLS_RQT": 231,
+            "E_UPDATE_BRAND_PIN_URLS_RSP": 232,
+            "E_GET_BRAND_PIN_URLS_COUNT_RQT": 233,
+            "E_GET_BRAND_PIN_URLS_COUNT_RSP": 234,
+            "E_GET_BRAND_PIN_URLS_RQT": 235,
+            "E_GET_BRAND_PIN_URLS_RSP": 236,
+            "E_DEL_BRAND_PIN_URLS_RQT": 237,
+            "E_DEL_BRAND_PIN_URLS_RSP": 238,
+            "E_CALL_HOLD_UNHOLD_RQT": 239,
+            "E_CALL_HOLD_UNHOLD_RSP": 240,
+            "E_INCOMING_CALL_START_RQT": 241,
+            "E_INCOMING_CALL_START_RSP": 242,
+            "E_SEND_ICE_CANDIDATES_IN_INCOMING_CALL_RQT": 243,
+            "E_SEND_ICE_CANDIDATES_IN_INCOMING_CALL_RSP": 244,
+            "E_INCOMING_CALL_ANSWER_RQT": 245,
+            "E_INCOMING_CALL_ANSWER_RSP": 246,
+            "E_INCOMING_CALL_END_RQT": 247,
+            "E_INCOMING_CALL_END_RSP": 248,
+            "E_INCOMING_CALL_ENDED_RQT": 249,
+            "E_INCOMING_CALL_ENDED_RSP": 250,
+            "E_DEACTIVATE_USER_DEVICE_RQT": 251,
+            "E_DEACTIVATE_USER_DEVICE_RSP": 252,
+            "E_PROMOTIONAL_NOTIFICATION_RQT": 253,
+            "E_PROMOTIONAL_NOTIFICATION_RSP": 254,
+            "E_LOGOUT_RQT": 291,
+            "E_LOGOUT_RSP": 292,
+            "E_USER_PRESENCE_CHANGED_RQT": 293,
+            "E_USER_PRESENCE_CHANGED_RSP": 294,
+            "E_DIRECT_AUDIO_VIDEO_CALL_180_RINGING_RQT": 295,
+            "E_DIRECT_AUDIO_VIDEO_CALL_180_RINGING_RSP": 296,
+            "E_GET_CHAT_HISTORY_LIST_RQT": 297,
+            "E_GET_CHAT_HISTORY_LIST_RSP": 298,
+            "E_GET_CALL_HISTORY_LIST_RQT": 299,
+            "E_GET_CALL_HISTORY_LIST_RSP": 300,
+            "E_GET_RECENT_CONVERSATION_LIST_RQT": 301,
+            "E_GET_RECENT_CONVERSATION_LIST_RSP": 302,
+            "E_IS_TYPING_RQT": 307,
+            "E_IS_TYPING_RSP": 308,
+            "E_UPDATE_PASSWORD_RQT": 309,
+            "E_UPDATE_PASSWORD_RSP": 310,
+            "E_LOGIN_ELSE_WHERE_NOTIFICATION_RQT": 311,
+            "E_LOGIN_ELSE_WHERE_NOTIFICATION_RSP": 312,
+            "E_CALL_INFO_SYNC_RQT": 313,
+            "E_CALL_INFO_SYNC_RSP": 314,
+            "E_IS_APP_ON_FOCUS_RQT": 315,
+            "E_IS_APP_ON_FOCUS_RSP": 316,
+            "E_GET_STUN_TURN_RQT": 317,
+            "E_GET_STUN_TURN_RSP": 318,
+            "E_SELF_CHAT_RQT": 319,
+            "E_SELF_CHAT_RSP": 320,
+            "E_SELF_CHAT_DELIVERY_RQT": 321,
+            "E_SELF_CHAT_DELIVERY_RSP": 322,
+            "E_SELF_CHAT_READ_RQT": 323,
+            "E_SELF_CHAT_READ_RSP": 324,
+            "E_SELF_GROUP_CREATED_RQT": 325,
+            "E_SELF_GROUP_CREATED_RSP": 326,
+            "E_SELF_BLOCK_GROUP_RQT": 327,
+            "E_SELF_BLOCK_GROUP_RSP": 328,
+            "E_SELF_UNBLOCK_GROUP_RQT": 329,
+            "E_SELF_UNBLOCK_GROUP_RSP": 330,
+            "E_SELF_GROUP_CHAT_RQT": 331,
+            "E_SELF_GROUP_CHAT_RSP": 332,
+            "E_SELF_GROUP_CHAT_DELIVERY_RQT": 333,
+            "E_SELF_GROUP_CHAT_DELIVERY_RSP": 334,
+            "E_SELF_GROUP_CHAT_READ_RQT": 335,
+            "E_SELF_GROUP_CHAT_READ_RSP": 336,
+            "E_DIRECT_AV_CALL_HOLD_UNHOLD_RQT": 337,
+            "E_DIRECT_AV_CALL_HOLD_UNHOLD_RSP": 338,
+            "E_DIRECT_AV_CALL_HOLD_UNHOLD_ACK_RQT": 339,
+            "E_DIRECT_AV_CALL_HOLD_UNHOLD_ACK_RSP": 340,
+            "E_DELETE_DEVICE_RQT": 341,
+            "E_DELETE_DEVICE_RSP": 342,
+            "E_DELETE_USER_RQT": 343,
+            "E_DELETE_USER_RSP": 344,
+            "E_RESEND_ACTIVATION_CODE_RQT": 345,
+            "E_RESEND_ACTIVATION_CODE_RSP": 346,
+            "E_SET_CALL_RECORDING_FILE_NAME_RQT": 347,
+            "E_SET_CALL_RECORDING_FILE_NAME_RSP": 348,
+            "E_MSG_TYPE_END": 349
+          }
+        },
+        "chatType": {
+          "values": {
+            "E_UNKNOWN_CHAT_TYPE": 0,
+            "E_TEXTPLAIN": 1,
+            "E_TEXTHTML": 2,
+            "E_LOCATION": 3,
+            "E_IMAGE": 4,
+            "E_VIDEO": 5,
+            "E_CONTACT": 6,
+            "E_DOCUMENT": 7,
+            "E_AUDIO": 8
+          }
+        },
+        "signUpReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPassHash": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sAuthorization": {
+              "type": "string",
+              "id": 3
+            },
+            "sAppName": {
+              "type": "string",
+              "id": 4
+            },
+            "sBrandPin": {
+              "type": "string",
+              "id": 5
+            },
+            "stOSName": {
+              "type": "osType",
+              "id": 6
+            },
+            "sSendOtp": {
+              "type": "bool",
+              "id": 7
+            },
+            "sAppDetails": {
+              "type": "appDetails",
+              "id": 8
+            }
+          }
+        },
+        "signUpRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sNonce": {
+              "type": "string",
+              "id": 3
+            },
+            "sSipPassword": {
+              "type": "string",
+              "id": 4
+            },
+            "ullExpiryTime": {
+              "type": "uint64",
+              "id": 5
+            },
+            "eRetCode": {
+              "type": "retCodes",
+              "id": 6
+            },
+            "sReturnPhrase": {
+              "type": "string",
+              "id": 7
+            }
+          }
+        },
+        "activateReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sActCode": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sAppName": {
+              "type": "string",
+              "id": 3
+            },
+            "sBrandPin": {
+              "type": "string",
+              "id": 4
+            },
+            "stOSName": {
+              "type": "osType",
+              "id": 5
+            },
+            "sAppDetails": {
+              "type": "appDetails",
+              "id": 6
+            }
+          }
+        },
+        "activateRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "eRetCode": {
+              "type": "retCodes",
+              "id": 3
+            },
+            "sReturnPhrase": {
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "userJoinedReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sJoinedUserMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "userJoinedRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sJoinedUserMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "loginReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPassHash": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sAuth": {
+              "type": "string",
+              "id": 3
+            },
+            "stOSName": {
+              "rule": "required",
+              "type": "osType",
+              "id": 4
+            },
+            "sOSVersion": {
+              "rule": "required",
+              "type": "string",
+              "id": 5
+            },
+            "sPushDevToken": {
+              "type": "string",
+              "id": 6
+            },
+            "sAppName": {
+              "type": "string",
+              "id": 7
+            },
+            "sBrandPin": {
+              "type": "string",
+              "id": 8
+            },
+            "sPresenceNotUpdate": {
+              "type": "bool",
+              "id": 9
+            },
+            "sPendingNotificationType": {
+              "type": "pendingNotificationType",
+              "id": 10
+            },
+            "sAppVersion": {
+              "type": "string",
+              "id": 11
+            },
+            "sSdkVersion": {
+              "type": "string",
+              "id": 12
+            },
+            "sAppDetails": {
+              "type": "appDetails",
+              "id": 13
+            },
+            "sDeviceId": {
+              "type": "string",
+              "id": 14
+            }
+          }
+        },
+        "loginRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sNonce": {
+              "type": "string",
+              "id": 3
+            },
+            "sAccessKey": {
+              "type": "string",
+              "id": 4
+            },
+            "sAccessSecret": {
+              "type": "string",
+              "id": 5
+            },
+            "sBucketName": {
+              "type": "string",
+              "id": 6
+            },
+            "sPerFolderName": {
+              "type": "string",
+              "id": 7
+            },
+            "sTmpFolderName": {
+              "type": "string",
+              "id": 8
+            },
+            "uServerTime": {
+              "type": "uint64",
+              "id": 9
+            },
+            "sS3Region": {
+              "type": "string",
+              "id": 10
+            },
+            "sRecFolderName": {
+              "type": "string",
+              "id": 11
+            }
+          }
+        },
+        "setProfileReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "stProfile": {
+              "rule": "required",
+              "type": "sProfile",
+              "id": 2
+            }
+          }
+        },
+        "setProfileRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "getProfileReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sMobNum": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "getProfileRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "stProfile": {
+              "rule": "required",
+              "type": "sProfile",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "chatReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "uChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "uSeqNum": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 4
+            },
+            "uSendTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 5
+            },
+            "stChatType": {
+              "rule": "required",
+              "type": "chatType",
+              "id": 6
+            },
+            "dataLen": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 7
+            },
+            "reportsReq": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 8
+            },
+            "data": {
+              "rule": "required",
+              "type": "string",
+              "id": 9
+            },
+            "sContentType": {
+              "type": "string",
+              "id": 10
+            },
+            "sThumbnailUrl": {
+              "type": "string",
+              "id": 11
+            },
+            "sFileName": {
+              "type": "string",
+              "id": 12
+            },
+            "uFileSize": {
+              "type": "uint32",
+              "id": 13
+            }
+          }
+        },
+        "chatRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "uChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "chatDeliveryReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "uChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "uDeliveryTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 4
+            },
+            "reportsRsp": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 5
+            }
+          }
+        },
+        "chatDeliveryRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "uChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "chatReadReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "uChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "uReadTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 4
+            }
+          }
+        },
+        "chatReadRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "uChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "callStartReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "stCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 3
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sSdp": {
+              "rule": "required",
+              "type": "string",
+              "id": 5
+            },
+            "sBrandPin": {
+              "type": "string",
+              "id": 6
+            },
+            "stOSName": {
+              "type": "osType",
+              "id": 7
+            }
+          }
+        },
+        "callStartRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "callAnswerReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sSdp": {
+              "type": "string",
+              "id": 4
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            }
+          }
+        },
+        "callAnswerRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "callEndReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sBrandPin": {
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "callEndRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "reason": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "contactType": {
+          "values": {
+            "E_PHONE_CONTACT": 0,
+            "E_CUSTOM_CONTACT": 1
+          }
+        },
+        "addNumReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "uCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 2
+            },
+            "sPhoneNums": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 3
+            },
+            "stContactTypes": {
+              "rule": "repeated",
+              "type": "contactType",
+              "id": 4,
+              "options": {
+                "packed": false
+              }
+            }
+          }
+        },
+        "addNumRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "isAppContactReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "uCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 2
+            },
+            "sPhoneNums": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 3
+            },
+            "sBrandPin": {
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "isAppContactRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "uCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 2
+            },
+            "sPhoneNums": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 3
+            },
+            "stProfile": {
+              "rule": "repeated",
+              "type": "sProfile",
+              "id": 4
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            }
+          }
+        },
+        "getContactsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            }
+          }
+        },
+        "getContactsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sPhoneNums": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            },
+            "stContactTypes": {
+              "rule": "repeated",
+              "type": "contactType",
+              "id": 4,
+              "options": {
+                "packed": false
+              }
+            }
+          }
+        },
+        "deleteNumReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPhoneNums": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "deleteNumRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "blockNumReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPhoneNums": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "blockNumRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "unblockNumReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPhoneNums": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "unblockNumRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "createGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sName": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sDescription": {
+              "type": "string",
+              "id": 3
+            },
+            "sProfilePic": {
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "createGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "deleteGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "deleteGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sGroupID": {
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "updateGroupInfoReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sName": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sProfilePic": {
+              "type": "string",
+              "id": 4
+            },
+            "sDescription": {
+              "type": "string",
+              "id": 5
+            }
+          }
+        },
+        "updateGroupInfoRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sGroupID": {
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "addUsersToGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "uCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 3
+            },
+            "sUserNumber": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "addUsersToGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "uCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 2
+            },
+            "sUserNumber": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            },
+            "sGroupID": {
+              "type": "string",
+              "id": 5
+            }
+          }
+        },
+        "delUsersToGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sPhoneNumber": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "delUsersToGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sGroupID": {
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "exitFromGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sPhoneNumber": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "exitFromGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sGroupID": {
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "blockGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "blockGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sGroupID": {
+              "type": "string",
+              "id": 3
+            },
+            "sMobNu": {
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "unBlockGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "unBlockGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sGroupID": {
+              "type": "string",
+              "id": 3
+            },
+            "sMobNu": {
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "userAddedToGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sName": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDescription": {
+              "type": "string",
+              "id": 4
+            },
+            "sProfilePic": {
+              "type": "string",
+              "id": 5
+            },
+            "sGroupContacts": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 6
+            },
+            "sadmins": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 7
+            }
+          }
+        },
+        "userAddedToGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "userDeletedToGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sName": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDescription": {
+              "type": "string",
+              "id": 4
+            },
+            "sProfilePic": {
+              "type": "string",
+              "id": 5
+            },
+            "sGroupContacts": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 6
+            }
+          }
+        },
+        "userDeletedToGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "pullMyGroupListReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            }
+          }
+        },
+        "pullMyGroupListRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "pullMyGroupDetailsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "pullMyGroupDetailsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sName": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDescription": {
+              "type": "string",
+              "id": 4
+            },
+            "sProfilePic": {
+              "type": "string",
+              "id": 5
+            },
+            "sGroupContacts": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 6
+            },
+            "sAdmins": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 7
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 8
+            },
+            "sGroupCreator": {
+              "type": "string",
+              "id": 9
+            }
+          }
+        },
+        "groupChatReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "uChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "uSeqNum": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 4
+            },
+            "uSendTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 5
+            },
+            "stChatType": {
+              "rule": "required",
+              "type": "chatType",
+              "id": 6
+            },
+            "dataLen": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 7
+            },
+            "reportsReq": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 8
+            },
+            "data": {
+              "rule": "required",
+              "type": "string",
+              "id": 9
+            },
+            "sContentType": {
+              "type": "string",
+              "id": 10
+            },
+            "sThumbnailUrl": {
+              "type": "string",
+              "id": 11
+            },
+            "sFileName": {
+              "type": "string",
+              "id": 12
+            },
+            "uFileSize": {
+              "type": "uint32",
+              "id": 13
+            }
+          }
+        },
+        "groupChatRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "uChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            }
+          }
+        },
+        "groupChatDeliveryReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "uChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "uDeliveryTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 4
+            },
+            "reportsRsp": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 5
+            },
+            "sDstNumber": {
+              "rule": "required",
+              "type": "string",
+              "id": 6
+            }
+          }
+        },
+        "groupChatDeliveryRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "uChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            }
+          }
+        },
+        "groupChatReadReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "uChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "uReadTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 4
+            },
+            "sDstNumber": {
+              "rule": "required",
+              "type": "string",
+              "id": 5
+            }
+          }
+        },
+        "groupChatReadRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "uChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            }
+          }
+        },
+        "sPresence": {
+          "fields": {
+            "sPhoneNum": {
+              "rule": "required",
+              "type": "string",
+              "id": 1
+            },
+            "sStatus": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 3
+            },
+            "sPresenceStatusMsg": {
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "getPresenceReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPhoneNums": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "getPresenceRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "stPresence": {
+              "rule": "repeated",
+              "type": "sPresence",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "addAdminsToGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sAdminNumber": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "addAdminsToGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sAdminNumber": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            },
+            "sGroupID": {
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "adminAddedToGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sName": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDescription": {
+              "type": "string",
+              "id": 4
+            },
+            "sProfilePic": {
+              "type": "string",
+              "id": 5
+            },
+            "sadmins": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 6
+            }
+          }
+        },
+        "adminAddedToGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "delAdminsToGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sAdminNumber": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "delAdminsToGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sGroupID": {
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "adminDeletedToGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sName": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDescription": {
+              "type": "string",
+              "id": 4
+            },
+            "sProfilePic": {
+              "type": "string",
+              "id": 5
+            },
+            "sGroupAdmins": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 6
+            }
+          }
+        },
+        "adminDeletedToGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "groupDeletedToGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sName": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDescription": {
+              "type": "string",
+              "id": 4
+            },
+            "sProfilePic": {
+              "type": "string",
+              "id": 5
+            }
+          }
+        },
+        "groupDeletedToGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "userExitedToGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sName": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDescription": {
+              "type": "string",
+              "id": 4
+            },
+            "sProfilePic": {
+              "type": "string",
+              "id": 5
+            },
+            "sExitNumber": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 6
+            }
+          }
+        },
+        "userExitedToGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "updatedInfoToGroupReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sName": {
+              "type": "string",
+              "id": 3
+            },
+            "sDescription": {
+              "type": "string",
+              "id": 4
+            },
+            "sProfilePic": {
+              "type": "string",
+              "id": 5
+            }
+          }
+        },
+        "updatedInfoToGroupRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "userProfileChangedReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sProfileUserMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "stProfile": {
+              "rule": "required",
+              "type": "sProfile",
+              "id": 3
+            }
+          }
+        },
+        "userProfileChangedRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sProfileUserMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "userPendingNotificationsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sUserJoinedReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 2
+            },
+            "sUserAddedToGroupReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 3
+            },
+            "sUserDeletedToGroupReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 4
+            },
+            "sChatReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 5
+            },
+            "sChatDeliveryReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 6
+            },
+            "sChatReadReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 7
+            },
+            "sGroupChatReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 8
+            },
+            "sGroupChatDeliveryReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 9
+            },
+            "sGroupChatReadReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 10
+            },
+            "sAdminAddedToGroupReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 11
+            },
+            "sAdminDeletedToGroupReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 12
+            },
+            "sGroupDeletedToGroupReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 13
+            },
+            "sUserExitedToGroupReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 14
+            },
+            "sUpdatedInfoToGroupReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 15
+            },
+            "sUserProfileChangedReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 16
+            },
+            "sUserStartedStreamReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 17
+            },
+            "sUserStreamStopReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 18
+            },
+            "sUserSharedStreamReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 19
+            },
+            "sStreamAnswerSdpToUserReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 20
+            },
+            "sJoinStreamOfferSdpToUserReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 21
+            },
+            "sStreamStartViewingStatusReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 22
+            },
+            "sUpdateChannelInfoReqToUsersCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 23
+            },
+            "sFriendSharedChannelInfoReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 24
+            },
+            "sAdminsAddedToChannelReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 25
+            },
+            "sAdminsDeletedToChannelReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 26
+            },
+            "sAdminExitedFromChannelReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 27
+            },
+            "sStreamStoppedReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 28
+            },
+            "sChannelDeletedToUserReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 29
+            },
+            "sAddAdminsToChannelReqCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 30
+            },
+            "sDirectAudioVideoCallStartReqCount": {
+              "type": "uint32",
+              "id": 31
+            },
+            "sDirectAudioVideoCallAnswerReqCount": {
+              "type": "uint32",
+              "id": 32
+            },
+            "sDirectAudioVideoCallEndReqCount": {
+              "type": "uint32",
+              "id": 33
+            },
+            "sSendIceCandidatesInDirectAVCallReqCount": {
+              "type": "uint32",
+              "id": 34
+            },
+            "sIncomingCallStartReqCount": {
+              "type": "uint32",
+              "id": 35
+            },
+            "sSendIceCandidatesInIncomingCallReqCount": {
+              "type": "uint32",
+              "id": 36
+            },
+            "sIncomingCallEndedReqCount": {
+              "type": "uint32",
+              "id": 37
+            },
+            "sCallInfoSyncReqCount": {
+              "type": "uint32",
+              "id": 38
+            },
+            "sSelfChatReqCount": {
+              "type": "uint32",
+              "id": 39
+            },
+            "sSelfChatDeliveryReqCount": {
+              "type": "uint32",
+              "id": 40
+            },
+            "sSelfChatReadReqCount": {
+              "type": "uint32",
+              "id": 41
+            },
+            "sSelfCreatedGroupReqCount": {
+              "type": "uint32",
+              "id": 42
+            },
+            "sSelfBlockGroupReqCount": {
+              "type": "uint32",
+              "id": 43
+            },
+            "sSelfUnBlockGroupReqCount": {
+              "type": "uint32",
+              "id": 44
+            },
+            "sSelfGroupChatReqCount": {
+              "type": "uint32",
+              "id": 45
+            },
+            "sSelfGroupChatDeliveryReqCount": {
+              "type": "uint32",
+              "id": 46
+            },
+            "sSelfGroupChatReadReqCount": {
+              "type": "uint32",
+              "id": 47
+            },
+            "sDirectAVCallHoldUnHoldReqCount": {
+              "type": "uint32",
+              "id": 48
+            },
+            "sDirectAVCallHoldUnHoldAckReqCount": {
+              "type": "uint32",
+              "id": 49
+            }
+          }
+        },
+        "userPendingNotificationsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "pendingNotificationType": {
+          "values": {
+            "E_UNKNOWN_REQUEST": 0,
+            "E_USER_JOINED_REQUEST": 1,
+            "E_USER_ADDED_TO_GROUP_REQUEST": 2,
+            "E_USER_DELETED_TO_GROUP_REQUEST": 3,
+            "E_CHAT_REQUEST": 4,
+            "E_CHAT_DELIVERY_REQUEST": 5,
+            "E_CHAT_READ_REQUEST": 6,
+            "E_GROUP_CHAT_REQUEST": 7,
+            "E_GROUP_CHAT_DELIVERY_REQUEST": 8,
+            "E_GROUP_CHAT_READ_REQUEST": 9,
+            "E_ADMIN_ADDED_TO_GROUP_REQUEST": 10,
+            "E_ADMIN_DELETED_TO_GROUP_REQUEST": 11,
+            "E_GROUP_DELETED_TO_GROUP_REQUEST": 12,
+            "E_USER_EXITED_TO_GROUP_REQUEST": 13,
+            "E_UPDATED_INFO_TO_GROUP_REQUEST": 14,
+            "E_USER_PROFILE_CHANGED_REQUEST": 15,
+            "E_USER_STARTED_STREAM_REQUSET": 16,
+            "E_USER_STREAM_STOP_REQUSET": 17,
+            "E_USER_SHARED_STREAM_REQUSET": 18,
+            "E_STREAM_ANSWER_SDP_TO_USER_REQUSET": 19,
+            "E_JOIN_STREAM_OFFER_SDP_TO_USER_REQUSET": 20,
+            "E_STREAM_START_VIEWING_STATUS_REQUSET": 21,
+            "E_UPDATE_CHANNEL_INFO_REQUEST": 22,
+            "E_FRIEND_SHARED_CHANNEL_INFO_REQUEST": 23,
+            "E_ADMINS_ADDED_TO_CHANNEL_REQUEST": 24,
+            "E_ADMINS_DELETED_TO_CHANNEL_REQUEST": 25,
+            "E_ADMIN_EXITED_FROM_CHANNEL_REQUEST": 26,
+            "E_STREAM_STOPPED_REQUSET": 27,
+            "E_CHANNEL_DELETED_TO_USER_REQUEST": 28,
+            "E_ADD_ADMINS_TO_CHANNEL_REQUEST": 29,
+            "E_DIRECT_AUDIO_VIDEO_CALL_START_REQUEST": 30,
+            "E_DIRECT_AUDIO_VIDEO_CALL_ANSWER_REQUEST": 31,
+            "E_DIRECT_AUDIO_VIDEO_CALL_END_REQUEST": 32,
+            "E_SEND_ICE_CANDIDATES_IN_DIRECT_AV_CALL_REQUEST": 33,
+            "E_INCOMING_CALL_START_REQUEST": 34,
+            "E_SEND_ICE_CANDIDATES_IN_INCOMING_CALL_REQUEST": 35,
+            "E_INCOMING_CALL_ENDED_REQUEST": 36,
+            "E_ALL_REQUESTS": 37,
+            "E_CALL_INFO_SYNC_REQUEST": 38,
+            "E_SELF_CHAT_REQUEST": 39,
+            "E_SELF_CHAT_DELIVERY_REQUEST": 40,
+            "E_SELF_CHAT_READ_REQUEST": 41,
+            "E_SELF_CREATED_GROUP_REQUEST": 42,
+            "E_SELF_BLOCK_GROUP_REQUEST": 43,
+            "E_SELF_UNBLOCK_GROUP_REQUEST": 44,
+            "E_SELF_GROUP_CHAT_REQUEST": 45,
+            "E_SELF_GROUP_CHAT_DELIVERY_REQUEST": 46,
+            "E_SELF_GROUP_CHAT_READ_REQUEST": 47,
+            "E_DIRECT_AV_CALL_HOLD_UNHOLD_REQUEST": 48,
+            "E_DIRECT_AV_CALL_HOLD_UNHOLD_ACK_REQUEST": 49
+          }
+        },
+        "getMyPendingNotificationsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPendingNotificationType": {
+              "rule": "required",
+              "type": "pendingNotificationType",
+              "id": 2
+            }
+          }
+        },
+        "getMyPendingNotificationsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "sendIceCandidatesInCallReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstNumber": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sIceCandidates": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 3
+            },
+            "sDirection": {
+              "rule": "required",
+              "type": "sendDirection",
+              "id": 4
+            },
+            "sCallId": {
+              "type": "string",
+              "id": 5
+            },
+            "sAppId": {
+              "type": "string",
+              "id": 6
+            },
+            "sJsonIceCandidates": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 7
+            }
+          }
+        },
+        "sendIceCandidatesInCallRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sDstNumber": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "registerSipUserReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sUserName": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sSipServerAddress": {
+              "type": "string",
+              "id": 4
+            },
+            "sSipServerPort": {
+              "type": "uint32",
+              "id": 5
+            },
+            "sBrandPin": {
+              "type": "string",
+              "id": 6
+            },
+            "stOSName": {
+              "type": "osType",
+              "id": 7
+            },
+            "sAppId": {
+              "type": "string",
+              "id": 8
+            }
+          }
+        },
+        "registerSipUserRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sBalanceUrl": {
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "sipUserEventReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sEventName": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sEventCode": {
+              "type": "uint32",
+              "id": 3
+            },
+            "sRegisterEvent": {
+              "type": "bool",
+              "id": 4
+            },
+            "sCallId": {
+              "type": "string",
+              "id": 5
+            },
+            "sAppId": {
+              "type": "string",
+              "id": 6
+            }
+          }
+        },
+        "sipUserEventRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "callSessionInProgressSdpReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sSdp": {
+              "type": "string",
+              "id": 4
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            }
+          }
+        },
+        "callSessionInProgressSdpRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "directAudioVideoCallStartReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "stCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 3
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sSdp": {
+              "rule": "required",
+              "type": "string",
+              "id": 5
+            },
+            "sCallActive": {
+              "rule": "required",
+              "type": "bool",
+              "id": 6
+            },
+            "sStartTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 7
+            },
+            "bIsRecording": {
+              "type": "bool",
+              "id": 8
+            }
+          }
+        },
+        "directAudioVideoCallStartRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "directAudioVideoCallAnswerReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "stCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 3
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sSdp": {
+              "rule": "required",
+              "type": "string",
+              "id": 5
+            },
+            "ullAnswerTime": {
+              "type": "uint64",
+              "id": 6
+            },
+            "bIsRecording": {
+              "type": "bool",
+              "id": 7
+            }
+          }
+        },
+        "directAudioVideoCallAnswerRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "directAudioVideoCallEndReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "stCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 3
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sStopTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 5
+            },
+            "uEndStatus": {
+              "type": "uint32",
+              "id": 6
+            },
+            "sEndReason": {
+              "type": "string",
+              "id": 7
+            }
+          }
+        },
+        "directAudioVideoCallEndRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "getTurnServerCredentialsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            }
+          }
+        },
+        "getTurnServerCredentialsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sTurnServerUrl": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sTurnServerUserName": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sTurnServerPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 5
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 6
+            },
+            "sStunServerUrl": {
+              "type": "string",
+              "id": 7
+            }
+          }
+        },
+        "sendIceCandidatesInDirectAVCallReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstNumber": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sIceCandidates": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 4
+            },
+            "sDirection": {
+              "type": "sendDirection",
+              "id": 5
+            },
+            "sJsonIceCandidates": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 6
+            }
+          }
+        },
+        "sendIceCandidatesInDirectAVCallRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "callEndedReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sEndStatus": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 4
+            },
+            "sEndReason": {
+              "rule": "required",
+              "type": "string",
+              "id": 5
+            }
+          }
+        },
+        "callEndedRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "opCodeAdminLoginReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sUserName": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "opCodeAdminLoginRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "brandUserLoginReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sUserName": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "brandUserLoginRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "generateBrandPinReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sAdminUserName": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sAdminPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sBrandUserName": {
+              "rule": "required",
+              "type": "string",
+              "id": 5
+            },
+            "sBrandPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 6
+            },
+            "sBrandName": {
+              "type": "string",
+              "id": 7
+            },
+            "sSipServerAddress": {
+              "type": "string",
+              "id": 8
+            },
+            "sSipServerPort": {
+              "type": "uint32",
+              "id": 9
+            },
+            "sCurrentCallsLimit": {
+              "type": "uint32",
+              "id": 10
+            },
+            "sBrandPinActive": {
+              "type": "bool",
+              "id": 11
+            },
+            "sAndroidActive": {
+              "type": "bool",
+              "id": 12
+            },
+            "sIosActive": {
+              "type": "bool",
+              "id": 13
+            },
+            "sBalanceUrl": {
+              "type": "string",
+              "id": 14
+            }
+          }
+        },
+        "generateBrandPinRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "updateBrandPinDetailsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sAdminUserName": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sAdminPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sBrandUserName": {
+              "type": "string",
+              "id": 4
+            },
+            "sBrandPassword": {
+              "type": "string",
+              "id": 5
+            },
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 6
+            },
+            "sBrandName": {
+              "type": "string",
+              "id": 7
+            },
+            "sSipServerAddress": {
+              "type": "string",
+              "id": 8
+            },
+            "sSipServerPort": {
+              "type": "uint32",
+              "id": 9
+            },
+            "sCurrentCallsLimit": {
+              "type": "uint32",
+              "id": 10
+            },
+            "sBrandPinActive": {
+              "type": "bool",
+              "id": 11
+            },
+            "sAndroidActive": {
+              "type": "bool",
+              "id": 12
+            },
+            "sIosActive": {
+              "type": "bool",
+              "id": 13
+            },
+            "sBalanceUrl": {
+              "type": "string",
+              "id": 14
+            }
+          }
+        },
+        "updateBrandPinDetailsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "getBrandNameReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "getBrandNameRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sBrandName": {
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "brandPinDetails": {
+          "fields": {
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 1
+            },
+            "sBrandName": {
+              "type": "string",
+              "id": 2
+            },
+            "sSipServerAddress": {
+              "type": "string",
+              "id": 3
+            },
+            "sSipServerPort": {
+              "type": "uint32",
+              "id": 4
+            },
+            "sCurrentCallsLimit": {
+              "type": "uint32",
+              "id": 5
+            },
+            "sBrandPinActive": {
+              "type": "bool",
+              "id": 6
+            },
+            "sAndroidActive": {
+              "type": "bool",
+              "id": 7
+            },
+            "sIosActive": {
+              "type": "bool",
+              "id": 8
+            },
+            "sBalanceUrl": {
+              "type": "string",
+              "id": 9
+            },
+            "sCurrentCallsCount": {
+              "type": "uint32",
+              "id": 10
+            }
+          }
+        },
+        "getAllBrandPinDetailsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sAdminUserName": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sAdminPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sPageSize": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 4
+            },
+            "sOffset": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 5
+            }
+          }
+        },
+        "getAllBrandPinDetailsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sBrandPinDetails": {
+              "rule": "repeated",
+              "type": "brandPinDetails",
+              "id": 2
+            },
+            "sPageSize": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 3
+            },
+            "sTotalNumberOfEntries": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 4
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            },
+            "sTotalNumberOfCalls": {
+              "type": "uint32",
+              "id": 6
+            }
+          }
+        },
+        "addServerDetailsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sSignalIpAddresses": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 2
+            },
+            "sDns": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 3
+            },
+            "sFiles": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "addServerDetailsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "getServerDetailsCountReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            }
+          }
+        },
+        "getServerDetailsCountRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sSignalIpCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 2
+            },
+            "sDnsCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 3
+            },
+            "sFileCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 4
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            }
+          }
+        },
+        "getServerDetailsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            }
+          }
+        },
+        "getServerDetailsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sSignalIpAddresses": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 2
+            },
+            "sDns": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 3
+            },
+            "sFiles": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 4
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            }
+          }
+        },
+        "delServerDetailsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sSignalIpAddresses": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 2
+            },
+            "sDns": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 3
+            },
+            "sFiles": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "delServerDetailsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "getConcurrentCallsCountReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sAdminUserName": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sAdminPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "getConcurrentCallsCountRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sCallsCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "sendDtmfToneInCallReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstNumber": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDtmfDigit": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "sendDtmfToneInCallRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sDstNumber": {
+              "type": "string",
+              "id": 3
+            },
+            "sCallId": {
+              "type": "string",
+              "id": 4
+            },
+            "sDtmfDigit": {
+              "type": "string",
+              "id": 5
+            }
+          }
+        },
+        "brandPinUrlNames": {
+          "values": {
+            "E_UNKNOWN_Name": 0,
+            "E_Balance_API": 1,
+            "E_Generate_OTP": 2,
+            "E_Validate_OTP": 3,
+            "E_Get_Rates_API": 4,
+            "E_Voucher_Recharge": 5,
+            "E_Balance_transfer": 6,
+            "E_Web_CDR_API": 7,
+            "E_Get_Remaining_Minutes_API": 8,
+            "E_Authentication_API": 9
+          }
+        },
+        "brandPinUrl": {
+          "fields": {
+            "sName": {
+              "rule": "required",
+              "type": "string",
+              "id": 1
+            },
+            "sValue": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "updateBrandPinUrlsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sAdminUserName": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sAdminPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sBrandPinUrls": {
+              "rule": "repeated",
+              "type": "brandPinUrl",
+              "id": 5
+            }
+          }
+        },
+        "updateBrandPinUrlsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "getBrandPinUrlsCountReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "getBrandPinUrlsCountRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sBrandPinUrlsCount": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "getBrandPinUrlsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "getBrandPinUrlsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sBrandPinUrls": {
+              "rule": "repeated",
+              "type": "brandPinUrl",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "delBrandPinUrlsReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sAdminUserName": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sAdminPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sBrandPin": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sBrandPinUrlNames": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 5
+            }
+          }
+        },
+        "delBrandPinUrlsRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "callHoldUnHoldReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstNumber": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sOption": {
+              "rule": "required",
+              "type": "bool",
+              "id": 4
+            }
+          }
+        },
+        "callHoldUnHoldRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sDstNumber": {
+              "type": "string",
+              "id": 3
+            },
+            "sCallId": {
+              "type": "string",
+              "id": 4
+            },
+            "sOption": {
+              "type": "bool",
+              "id": 5
+            }
+          }
+        },
+        "incomingCallStartReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "stCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 3
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sSdp": {
+              "rule": "required",
+              "type": "string",
+              "id": 5
+            },
+            "sBrandPin": {
+              "type": "string",
+              "id": 6
+            },
+            "sCallActive": {
+              "rule": "required",
+              "type": "bool",
+              "id": 7
+            },
+            "sStartTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 8
+            }
+          }
+        },
+        "incomingCallStartRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDstNumber": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sBrandPin": {
+              "type": "string",
+              "id": 5
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 6
+            }
+          }
+        },
+        "sendIceCandidatesInIncomingCallReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstNumber": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sIceCandidates": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 4
+            },
+            "sDirection": {
+              "rule": "required",
+              "type": "sendDirection",
+              "id": 5
+            },
+            "sAppId": {
+              "type": "string",
+              "id": 6
+            },
+            "sJsonIceCandidates": {
+              "rule": "repeated",
+              "type": "string",
+              "id": 7
+            }
+          }
+        },
+        "sendIceCandidatesInIncomingCallRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "incomingCallAnswerReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "stCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 3
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sSdp": {
+              "rule": "required",
+              "type": "string",
+              "id": 5
+            }
+          }
+        },
+        "incomingCallAnswerRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "incomingCallEndReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "stCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 3
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sBrandPin": {
+              "type": "string",
+              "id": 5
+            },
+            "sStopTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 6
+            }
+          }
+        },
+        "incomingCallEndRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "reason": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            }
+          }
+        },
+        "incomingCallEndedReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "stCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 3
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "sEndStatus": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 5
+            },
+            "sEndReason": {
+              "rule": "required",
+              "type": "string",
+              "id": 6
+            },
+            "sStopTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 7
+            }
+          }
+        },
+        "incomingCallEndedRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "deActivateUserDeviceReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sBrandPin": {
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "deActivateUserDeviceRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "promotionalNotificationReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "stPromotionalType": {
+              "rule": "required",
+              "type": "promotionalType",
+              "id": 2
+            },
+            "sPromotionalMessage": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "promotionalNotificationRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "logoutReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPushEnable": {
+              "type": "bool",
+              "id": 2
+            }
+          }
+        },
+        "logoutRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "userPresenceChangedReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "stPresence": {
+              "rule": "required",
+              "type": "sPresence",
+              "id": 2
+            }
+          }
+        },
+        "userPresenceChangedRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 3
+            }
+          }
+        },
+        "directAudioVideoCall180RingingReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "stCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 3
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "bIsCallWaiting": {
+              "type": "bool",
+              "id": 5
+            }
+          }
+        },
+        "directAudioVideoCall180RingingRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "requestDirection": {
+          "values": {
+            "E_UNKNOWN_REQUEST_DIRECTION": 0,
+            "E_OUTGOING": 1,
+            "E_INCOMING": 2
+          }
+        },
+        "chatMessageStatus": {
+          "values": {
+            "E_UNKNOWN_STATUS": 0,
+            "E_NOT_DELIVERED": 1,
+            "E_DELIVERED": 2,
+            "E_READ": 3
+          }
+        },
+        "callStatus": {
+          "values": {
+            "E_UNKNOWN_CALL_STATUS": 0,
+            "E_MISSED_CALL": 1,
+            "E_ANSWERED_CALL": 2
+          }
+        },
+        "chatHistory": {
+          "fields": {
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 1
+            },
+            "sChatID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ssrcMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "ullSeqNum": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 5
+            },
+            "ullMessageTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 6
+            },
+            "eChatType": {
+              "rule": "required",
+              "type": "chatType",
+              "id": 7
+            },
+            "uDataLen": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 8
+            },
+            "uReportsReq": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 9
+            },
+            "sData": {
+              "rule": "required",
+              "type": "string",
+              "id": 10
+            },
+            "sContentType": {
+              "type": "string",
+              "id": 11
+            },
+            "sThumbnailUrl": {
+              "type": "string",
+              "id": 12
+            },
+            "eDirection": {
+              "rule": "required",
+              "type": "requestDirection",
+              "id": 13
+            },
+            "eStatus": {
+              "rule": "required",
+              "type": "chatMessageStatus",
+              "id": 14
+            },
+            "ullDeliveryTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 15
+            },
+            "ullReadTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 16
+            },
+            "sGroupId": {
+              "type": "string",
+              "id": 17
+            },
+            "sFileName": {
+              "type": "string",
+              "id": 18
+            },
+            "uFileSize": {
+              "type": "uint32",
+              "id": 19
+            }
+          }
+        },
+        "getChatHistoryListReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPageSize": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 2
+            },
+            "sOffset": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 3
+            },
+            "sDstMobNu": {
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "getChatHistoryListRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "stChatHistoryList": {
+              "rule": "repeated",
+              "type": "chatHistory",
+              "id": 2
+            },
+            "sPageSize": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 3
+            },
+            "sTotalNumberOfEntries": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 4
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            }
+          }
+        },
+        "callHistory": {
+          "fields": {
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 1
+            },
+            "sCallID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ssrcMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "eCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 5
+            },
+            "eDirection": {
+              "rule": "required",
+              "type": "requestDirection",
+              "id": 6
+            },
+            "eStatus": {
+              "rule": "required",
+              "type": "callStatus",
+              "id": 7
+            },
+            "ullStartTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 8
+            },
+            "ullEndTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 9
+            },
+            "ullAnswerTime": {
+              "type": "uint64",
+              "id": 10
+            }
+          }
+        },
+        "getCallHistoryListReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPageSize": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 2
+            },
+            "sOffset": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 3
+            },
+            "sDstMobNu": {
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "getCallHistoryListRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "stCallHistoryList": {
+              "rule": "repeated",
+              "type": "callHistory",
+              "id": 2
+            },
+            "sPageSize": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 3
+            },
+            "sTotalNumberOfEntries": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 4
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            }
+          }
+        },
+        "conversationType": {
+          "values": {
+            "E_UNKNOWN_CONVERSATION_TYPE": 0,
+            "E_CHAT_CONVERSATION": 1,
+            "E_GROUP_CHAT_CONVERSATION": 2,
+            "E_CALL_CONVERSATION": 3,
+            "E_END_CONVERSATION_TYPE": 4
+          }
+        },
+        "recentConversation": {
+          "fields": {
+            "eConversationType": {
+              "rule": "required",
+              "type": "conversationType",
+              "id": 1
+            },
+            "stChatHistoryList": {
+              "type": "chatHistory",
+              "id": 2
+            },
+            "stCallHistoryList": {
+              "type": "callHistory",
+              "id": 3
+            }
+          }
+        },
+        "getRecentConversationListReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPageSize": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 2
+            },
+            "sOffset": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 3
+            }
+          }
+        },
+        "getRecentConversationListRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "stConversationList": {
+              "rule": "repeated",
+              "type": "recentConversation",
+              "id": 2
+            },
+            "sPageSize": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 3
+            },
+            "sTotalNumberOfEntries": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 4
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 5
+            }
+          }
+        },
+        "isTypingReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "type": "string",
+              "id": 2
+            },
+            "sGroupID": {
+              "type": "string",
+              "id": 3
+            },
+            "bIsTyping": {
+              "rule": "required",
+              "type": "bool",
+              "id": 4
+            }
+          }
+        },
+        "isTypingRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "updatePasswordReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "updatePasswordRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "loginElseWhereNotificationReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            }
+          }
+        },
+        "loginElseWhereNotificationRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            }
+          }
+        },
+        "callInfoSyncReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sCallID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ssrcMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "eCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 5
+            },
+            "eStatus": {
+              "rule": "required",
+              "type": "callStatus",
+              "id": 6
+            },
+            "ullStartTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 7
+            },
+            "ullEndTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 8
+            },
+            "ullAnswerTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 9
+            },
+            "eDirection": {
+              "rule": "required",
+              "type": "requestDirection",
+              "id": 10
+            }
+          }
+        },
+        "callInfoSyncRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "appFocusStatus": {
+          "values": {
+            "E_UNKNOWN_FOCUS_STATUS": 0,
+            "E_IN_FOCUS": 1,
+            "E_OUT_FOCUS": 2
+          }
+        },
+        "isAppInFocusReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "eStatus": {
+              "rule": "required",
+              "type": "appFocusStatus",
+              "id": 2
+            }
+          }
+        },
+        "isAppInFocusRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sReturnPhrase": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "transportType": {
+          "values": {
+            "E_UNKNOWN_TRANSPORT_STATUS": 0,
+            "E_TRANSPORT_TCP": 1,
+            "E_TRANSPORT_UDP": 2,
+            "E_TRANSPORT_TLS": 3,
+            "E_TRANSPORT_WS": 4,
+            "E_TRANSPORT_WSS": 5
+          }
+        },
+        "stunTurnInfo": {
+          "fields": {
+            "sStunURL": {
+              "rule": "required",
+              "type": "string",
+              "id": 1
+            },
+            "sStunPort": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 2
+            },
+            "sTurnURL": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sTurnPort": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 4
+            },
+            "eTxType": {
+              "rule": "required",
+              "type": "transportType",
+              "id": 5
+            },
+            "sTurnUserName": {
+              "rule": "required",
+              "type": "string",
+              "id": 6
+            },
+            "sTurnPassword": {
+              "rule": "required",
+              "type": "string",
+              "id": 7
+            }
+          }
+        },
+        "getStunTurnReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            }
+          }
+        },
+        "getStunTurnRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sReturnPhrase": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "stStunTurnInfo": {
+              "rule": "repeated",
+              "type": "stunTurnInfo",
+              "id": 4
+            }
+          }
+        },
+        "selfGroupCreatedReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sName": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sDescription": {
+              "type": "string",
+              "id": 4
+            },
+            "sProfilePic": {
+              "type": "string",
+              "id": 5
+            }
+          }
+        },
+        "selfGroupCreatedRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sGroupID": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ret": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "directAVCallHoldUnHoldReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "eCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 3
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "bOption": {
+              "rule": "required",
+              "type": "bool",
+              "id": 5
+            }
+          }
+        },
+        "directAVCallHoldUnHoldRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "directAVCallHoldUnHoldAckReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDstMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "eCallType": {
+              "rule": "required",
+              "type": "callType",
+              "id": 3
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "bOption": {
+              "rule": "required",
+              "type": "bool",
+              "id": 5
+            }
+          }
+        },
+        "directAVCallHoldUnHoldAckRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 4
+            }
+          }
+        },
+        "deleteDeviceReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sDeviceId": {
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "deleteDeviceRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sReturnPhrase": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "deleteUserReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            }
+          }
+        },
+        "deleteUserRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sReturnPhrase": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "reSendActivationCodeReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sPassHash": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "bIsCall": {
+              "rule": "required",
+              "type": "bool",
+              "id": 3
+            },
+            "sAppDetails": {
+              "type": "appDetails",
+              "id": 4
+            }
+          }
+        },
+        "reSendActivationCodeRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sReturnPhrase": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "ullExpiryTime": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 4
+            }
+          }
+        },
+        "setCallRecFileNameReq": {
+          "fields": {
+            "stHdrs": {
+              "rule": "required",
+              "type": "commHdrs",
+              "id": 1
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sFileName": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            }
+          }
+        },
+        "setCallRecFileNameRes": {
+          "fields": {
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 1
+            },
+            "eReturnCode": {
+              "rule": "required",
+              "type": "retCodes",
+              "id": 2
+            },
+            "sReturnPhrase": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sCallId": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "msg": {
+          "fields": {
+            "uVersion": {
+              "rule": "required",
+              "type": "uint32",
+              "id": 1
+            },
+            "stSignUpReq": {
+              "type": "signUpReq",
+              "id": 2
+            },
+            "stSignUpRes": {
+              "type": "signUpRes",
+              "id": 3
+            },
+            "stActivateReq": {
+              "type": "activateReq",
+              "id": 4
+            },
+            "stActivateRes": {
+              "type": "activateRes",
+              "id": 5
+            },
+            "stUserJoinedReq": {
+              "type": "userJoinedReq",
+              "id": 6
+            },
+            "stUserJoinedRes": {
+              "type": "userJoinedRes",
+              "id": 7
+            },
+            "stLoginReq": {
+              "type": "loginReq",
+              "id": 8
+            },
+            "stLoginRes": {
+              "type": "loginRes",
+              "id": 9
+            },
+            "stChatReq": {
+              "type": "chatReq",
+              "id": 10
+            },
+            "stChatRes": {
+              "type": "chatRes",
+              "id": 11
+            },
+            "stChatDeliveryReq": {
+              "type": "chatDeliveryReq",
+              "id": 12
+            },
+            "stChatDeliveryRes": {
+              "type": "chatDeliveryRes",
+              "id": 13
+            },
+            "stChatReadReq": {
+              "type": "chatReadReq",
+              "id": 14
+            },
+            "stChatReadRes": {
+              "type": "chatReadRes",
+              "id": 15
+            },
+            "stCallStartReq": {
+              "type": "callStartReq",
+              "id": 16
+            },
+            "stCallStartRes": {
+              "type": "callStartRes",
+              "id": 17
+            },
+            "stCallEndReq": {
+              "type": "callEndReq",
+              "id": 18
+            },
+            "stCallEndRes": {
+              "type": "callEndRes",
+              "id": 19
+            },
+            "stAddNumReq": {
+              "type": "addNumReq",
+              "id": 20
+            },
+            "stAddNumRes": {
+              "type": "addNumRes",
+              "id": 21
+            },
+            "stIsAppContactReq": {
+              "type": "isAppContactReq",
+              "id": 22
+            },
+            "stIsAppContactRes": {
+              "type": "isAppContactRes",
+              "id": 23
+            },
+            "stGetContactsReq": {
+              "type": "getContactsReq",
+              "id": 24
+            },
+            "stGetContactsRes": {
+              "type": "getContactsRes",
+              "id": 25
+            },
+            "stDeleteNumReq": {
+              "type": "deleteNumReq",
+              "id": 26
+            },
+            "stDeleteNumRes": {
+              "type": "deleteNumRes",
+              "id": 27
+            },
+            "stBlockNumReq": {
+              "type": "blockNumReq",
+              "id": 28
+            },
+            "stBlockNumRes": {
+              "type": "blockNumRes",
+              "id": 29
+            },
+            "stUnBlockNumReq": {
+              "type": "unblockNumReq",
+              "id": 30
+            },
+            "stUnBlockNumRes": {
+              "type": "unblockNumRes",
+              "id": 31
+            },
+            "stCreateGroupReq": {
+              "type": "createGroupReq",
+              "id": 32
+            },
+            "stCreateGroupRes": {
+              "type": "createGroupRes",
+              "id": 33
+            },
+            "stDeleteGroupReq": {
+              "type": "deleteGroupReq",
+              "id": 34
+            },
+            "stDeleteGroupRes": {
+              "type": "deleteGroupRes",
+              "id": 35
+            },
+            "stUpdateGroupInfoReq": {
+              "type": "updateGroupInfoReq",
+              "id": 36
+            },
+            "stUpdateGroupInfoRes": {
+              "type": "updateGroupInfoRes",
+              "id": 37
+            },
+            "stAddUsersToGroupReq": {
+              "type": "addUsersToGroupReq",
+              "id": 38
+            },
+            "stAddUsersToGroupRes": {
+              "type": "addUsersToGroupRes",
+              "id": 39
+            },
+            "stDelUsersToGroupReq": {
+              "type": "delUsersToGroupReq",
+              "id": 40
+            },
+            "stDelUsersToGroupRes": {
+              "type": "delUsersToGroupRes",
+              "id": 41
+            },
+            "stExitFromGroupReq": {
+              "type": "exitFromGroupReq",
+              "id": 42
+            },
+            "stExitFromGroupRes": {
+              "type": "exitFromGroupRes",
+              "id": 43
+            },
+            "stBlockGroupReq": {
+              "type": "blockGroupReq",
+              "id": 44
+            },
+            "stBlockGroupRes": {
+              "type": "blockGroupRes",
+              "id": 45
+            },
+            "stUnBlockGroupReq": {
+              "type": "unBlockGroupReq",
+              "id": 46
+            },
+            "stUnBlockGroupRes": {
+              "type": "unBlockGroupRes",
+              "id": 47
+            },
+            "stUserAddedToGroupReq": {
+              "type": "userAddedToGroupReq",
+              "id": 48
+            },
+            "stUserAddedToGroupRes": {
+              "type": "userAddedToGroupRes",
+              "id": 49
+            },
+            "stUserDeletedToGroupReq": {
+              "type": "userDeletedToGroupReq",
+              "id": 50
+            },
+            "stUserDeletedToGroupRes": {
+              "type": "userDeletedToGroupRes",
+              "id": 51
+            },
+            "stPullMyGroupListReq": {
+              "type": "pullMyGroupListReq",
+              "id": 52
+            },
+            "stPullMyGroupListRes": {
+              "type": "pullMyGroupListRes",
+              "id": 53
+            },
+            "stPullMyGroupDetailsReq": {
+              "type": "pullMyGroupDetailsReq",
+              "id": 54
+            },
+            "stPullMyGroupDetailsRes": {
+              "type": "pullMyGroupDetailsRes",
+              "id": 55
+            },
+            "stGroupChatReq": {
+              "type": "groupChatReq",
+              "id": 56
+            },
+            "stGroupChatRes": {
+              "type": "groupChatRes",
+              "id": 57
+            },
+            "stGroupChatDeliveryReq": {
+              "type": "groupChatDeliveryReq",
+              "id": 58
+            },
+            "stGroupChatDeliveryRes": {
+              "type": "groupChatDeliveryRes",
+              "id": 59
+            },
+            "stGroupChatReadReq": {
+              "type": "groupChatReadReq",
+              "id": 60
+            },
+            "stGroupChatReadRes": {
+              "type": "groupChatReadRes",
+              "id": 61
+            },
+            "stGetPresReq": {
+              "type": "getPresenceReq",
+              "id": 62
+            },
+            "stGetPresRes": {
+              "type": "getPresenceRes",
+              "id": 63
+            },
+            "stSetProfileReq": {
+              "type": "setProfileReq",
+              "id": 64
+            },
+            "stSetProfileRes": {
+              "type": "setProfileRes",
+              "id": 65
+            },
+            "stGetProfileReq": {
+              "type": "getProfileReq",
+              "id": 66
+            },
+            "stGetProfileRes": {
+              "type": "getProfileRes",
+              "id": 67
+            },
+            "stAddAdminsToGroupReq": {
+              "type": "addAdminsToGroupReq",
+              "id": 68
+            },
+            "stAddAdminsToGroupRes": {
+              "type": "addAdminsToGroupRes",
+              "id": 69
+            },
+            "stAdminAddedToGroupReq": {
+              "type": "adminAddedToGroupReq",
+              "id": 70
+            },
+            "stAdminAddedToGroupRes": {
+              "type": "adminAddedToGroupRes",
+              "id": 71
+            },
+            "stDelAdminsToGroupReq": {
+              "type": "delAdminsToGroupReq",
+              "id": 72
+            },
+            "stDelAdminsToGroupRes": {
+              "type": "delAdminsToGroupRes",
+              "id": 73
+            },
+            "stAdminDeletedToGroupReq": {
+              "type": "adminDeletedToGroupReq",
+              "id": 74
+            },
+            "stAdminDeletedToGroupRes": {
+              "type": "adminDeletedToGroupRes",
+              "id": 75
+            },
+            "stGroupDeletedToGroupReq": {
+              "type": "groupDeletedToGroupReq",
+              "id": 76
+            },
+            "stGroupDeletedToGroupRes": {
+              "type": "groupDeletedToGroupRes",
+              "id": 77
+            },
+            "stUserExitedToGroupReq": {
+              "type": "userExitedToGroupReq",
+              "id": 78
+            },
+            "stUserExitedToGroupRes": {
+              "type": "userExitedToGroupRes",
+              "id": 79
+            },
+            "stUpdatedInfoToGroupReq": {
+              "type": "updatedInfoToGroupReq",
+              "id": 80
+            },
+            "stUpdatedInfoToGroupRes": {
+              "type": "updatedInfoToGroupRes",
+              "id": 81
+            },
+            "stUserProfileChangedReq": {
+              "type": "userProfileChangedReq",
+              "id": 82
+            },
+            "stUserProfileChangedRes": {
+              "type": "userProfileChangedRes",
+              "id": 83
+            },
+            "stUserPendingNotificationsReq": {
+              "type": "userPendingNotificationsReq",
+              "id": 84
+            },
+            "stUserPendingNotificationsRes": {
+              "type": "userPendingNotificationsRes",
+              "id": 85
+            },
+            "stGetMyPendingNotificationsReq": {
+              "type": "getMyPendingNotificationsReq",
+              "id": 86
+            },
+            "stGetMyPendingNotificationsRes": {
+              "type": "getMyPendingNotificationsRes",
+              "id": 87
+            },
+            "stSendIceCandidatesInCallReq": {
+              "type": "sendIceCandidatesInCallReq",
+              "id": 186
+            },
+            "stSendIceCandidatesInCallRes": {
+              "type": "sendIceCandidatesInCallRes",
+              "id": 187
+            },
+            "stCallAnswerReq": {
+              "type": "callAnswerReq",
+              "id": 188
+            },
+            "stCallAnswerRes": {
+              "type": "callAnswerRes",
+              "id": 189
+            },
+            "stRegisterSipUserReq": {
+              "type": "registerSipUserReq",
+              "id": 190
+            },
+            "stRegisterSipUserRes": {
+              "type": "registerSipUserRes",
+              "id": 191
+            },
+            "stSipUserEventReq": {
+              "type": "sipUserEventReq",
+              "id": 192
+            },
+            "stSipUserEventRes": {
+              "type": "sipUserEventRes",
+              "id": 193
+            },
+            "stCallSessionInProgressSdpReq": {
+              "type": "callSessionInProgressSdpReq",
+              "id": 194
+            },
+            "stCallSessionInProgressSdpRes": {
+              "type": "callSessionInProgressSdpRes",
+              "id": 195
+            },
+            "stDirectAudioVideoCallStartReq": {
+              "type": "directAudioVideoCallStartReq",
+              "id": 196
+            },
+            "stDirectAudioVideoCallStartRes": {
+              "type": "directAudioVideoCallStartRes",
+              "id": 197
+            },
+            "stDirectAudioVideoCallAnswerReq": {
+              "type": "directAudioVideoCallAnswerReq",
+              "id": 198
+            },
+            "stDirectAudioVideoCallAnswerRes": {
+              "type": "directAudioVideoCallAnswerRes",
+              "id": 199
+            },
+            "stDirectAudioVideoCallEndReq": {
+              "type": "directAudioVideoCallEndReq",
+              "id": 200
+            },
+            "stDirectAudioVideoCallEndRes": {
+              "type": "directAudioVideoCallEndRes",
+              "id": 201
+            },
+            "stGetTurnServerCredentialsReq": {
+              "type": "getTurnServerCredentialsReq",
+              "id": 202
+            },
+            "stGetTurnServerCredentialsRes": {
+              "type": "getTurnServerCredentialsRes",
+              "id": 203
+            },
+            "stSendIceCandidatesInDirectAVCallReq": {
+              "type": "sendIceCandidatesInDirectAVCallReq",
+              "id": 204
+            },
+            "stSendIceCandidatesInDirectAVCallRes": {
+              "type": "sendIceCandidatesInDirectAVCallRes",
+              "id": 205
+            },
+            "stCallEndedReq": {
+              "type": "callEndedReq",
+              "id": 206
+            },
+            "stCallEndedRes": {
+              "type": "callEndedRes",
+              "id": 207
+            },
+            "stOpCodeAdminLoginReq": {
+              "type": "opCodeAdminLoginReq",
+              "id": 208
+            },
+            "stOpCodeAdminLoginRes": {
+              "type": "opCodeAdminLoginRes",
+              "id": 209
+            },
+            "stBrandUserLoginReq": {
+              "type": "brandUserLoginReq",
+              "id": 210
+            },
+            "stBrandUserLoginRes": {
+              "type": "brandUserLoginRes",
+              "id": 211
+            },
+            "stGenerateBrandPinReq": {
+              "type": "generateBrandPinReq",
+              "id": 212
+            },
+            "stGenerateBrandPinRes": {
+              "type": "generateBrandPinRes",
+              "id": 213
+            },
+            "stUpdateBrandPinDetailsReq": {
+              "type": "updateBrandPinDetailsReq",
+              "id": 214
+            },
+            "stUpdateBrandPinDetailsRes": {
+              "type": "updateBrandPinDetailsRes",
+              "id": 215
+            },
+            "stGetBrandNameReq": {
+              "type": "getBrandNameReq",
+              "id": 216
+            },
+            "stGetBrandNameRes": {
+              "type": "getBrandNameRes",
+              "id": 217
+            },
+            "stGetAllBrandPinDetailsReq": {
+              "type": "getAllBrandPinDetailsReq",
+              "id": 218
+            },
+            "stGetAllBrandPinDetailsRes": {
+              "type": "getAllBrandPinDetailsRes",
+              "id": 219
+            },
+            "stAddServerDetailsReq": {
+              "type": "addServerDetailsReq",
+              "id": 220
+            },
+            "stAddServerDetailsRes": {
+              "type": "addServerDetailsRes",
+              "id": 221
+            },
+            "stGetServerDetailsCountReq": {
+              "type": "getServerDetailsCountReq",
+              "id": 222
+            },
+            "stGetServerDetailsCountRes": {
+              "type": "getServerDetailsCountRes",
+              "id": 223
+            },
+            "stGetServerDetailsReq": {
+              "type": "getServerDetailsReq",
+              "id": 224
+            },
+            "stGetServerDetailsRes": {
+              "type": "getServerDetailsRes",
+              "id": 225
+            },
+            "stDelServerDetailsReq": {
+              "type": "delServerDetailsReq",
+              "id": 226
+            },
+            "stDelServerDetailsRes": {
+              "type": "delServerDetailsRes",
+              "id": 227
+            },
+            "stGetConcurrentCallsCountReq": {
+              "type": "getConcurrentCallsCountReq",
+              "id": 228
+            },
+            "stGetConcurrentCallsCountRes": {
+              "type": "getConcurrentCallsCountRes",
+              "id": 229
+            },
+            "stSendDtmfToneInCallReq": {
+              "type": "sendDtmfToneInCallReq",
+              "id": 230
+            },
+            "stSendDtmfToneInCallRes": {
+              "type": "sendDtmfToneInCallRes",
+              "id": 231
+            },
+            "stUpdateBrandPinUrlsReq": {
+              "type": "updateBrandPinUrlsReq",
+              "id": 232
+            },
+            "stUpdateBrandPinUrlsRes": {
+              "type": "updateBrandPinUrlsRes",
+              "id": 233
+            },
+            "stGetBrandPinUrlsCountReq": {
+              "type": "getBrandPinUrlsCountReq",
+              "id": 234
+            },
+            "stGetBrandPinUrlsCountRes": {
+              "type": "getBrandPinUrlsCountRes",
+              "id": 235
+            },
+            "stGetBrandPinUrlsReq": {
+              "type": "getBrandPinUrlsReq",
+              "id": 236
+            },
+            "stGetBrandPinUrlsRes": {
+              "type": "getBrandPinUrlsRes",
+              "id": 237
+            },
+            "stDelBrandPinUrlsReq": {
+              "type": "delBrandPinUrlsReq",
+              "id": 238
+            },
+            "stDelBrandPinUrlsRes": {
+              "type": "delBrandPinUrlsRes",
+              "id": 239
+            },
+            "stCallHoldUnHoldReq": {
+              "type": "callHoldUnHoldReq",
+              "id": 240
+            },
+            "stCallHoldUnHoldRes": {
+              "type": "callHoldUnHoldRes",
+              "id": 241
+            },
+            "stIncomingCallStartReq": {
+              "type": "incomingCallStartReq",
+              "id": 242
+            },
+            "stIncomingCallStartRes": {
+              "type": "incomingCallStartRes",
+              "id": 243
+            },
+            "stSendIceCandidatesInIncomingCallReq": {
+              "type": "sendIceCandidatesInIncomingCallReq",
+              "id": 244
+            },
+            "stSendIceCandidatesInIncomingCallRes": {
+              "type": "sendIceCandidatesInIncomingCallRes",
+              "id": 245
+            },
+            "stIncomingCallAnswerReq": {
+              "type": "incomingCallAnswerReq",
+              "id": 246
+            },
+            "stIncomingCallAnswerRes": {
+              "type": "incomingCallAnswerRes",
+              "id": 247
+            },
+            "stIncomingCallEndReq": {
+              "type": "incomingCallEndReq",
+              "id": 248
+            },
+            "stIncomingCallEndRes": {
+              "type": "incomingCallEndRes",
+              "id": 249
+            },
+            "stIncomingCallEndedReq": {
+              "type": "incomingCallEndedReq",
+              "id": 250
+            },
+            "stIncomingCallEndedRes": {
+              "type": "incomingCallEndedRes",
+              "id": 251
+            },
+            "stDeActivateUserDeviceReq": {
+              "type": "deActivateUserDeviceReq",
+              "id": 252
+            },
+            "stDeActivateUserDeviceRes": {
+              "type": "deActivateUserDeviceRes",
+              "id": 253
+            },
+            "stPromotionalNotificationReq": {
+              "type": "promotionalNotificationReq",
+              "id": 254
+            },
+            "stPromotionalNotificationRes": {
+              "type": "promotionalNotificationRes",
+              "id": 255
+            },
+            "stLogoutReq": {
+              "type": "logoutReq",
+              "id": 292
+            },
+            "stLogoutRes": {
+              "type": "logoutRes",
+              "id": 293
+            },
+            "stUserPresenceChangedReq": {
+              "type": "userPresenceChangedReq",
+              "id": 294
+            },
+            "stUserPresenceChangedRes": {
+              "type": "userPresenceChangedRes",
+              "id": 295
+            },
+            "stDirectAudioVideoCall180RingingReq": {
+              "type": "directAudioVideoCall180RingingReq",
+              "id": 296
+            },
+            "stDirectAudioVideoCall180RingingRes": {
+              "type": "directAudioVideoCall180RingingRes",
+              "id": 297
+            },
+            "stGetChatHistoryListReq": {
+              "type": "getChatHistoryListReq",
+              "id": 298
+            },
+            "stGetChatHistoryListRes": {
+              "type": "getChatHistoryListRes",
+              "id": 299
+            },
+            "stGetCallHistoryListReq": {
+              "type": "getCallHistoryListReq",
+              "id": 300
+            },
+            "stGetCallHistoryListRes": {
+              "type": "getCallHistoryListRes",
+              "id": 301
+            },
+            "stGetRecentConversationListReq": {
+              "type": "getRecentConversationListReq",
+              "id": 302
+            },
+            "stGetRecentConversationListRes": {
+              "type": "getRecentConversationListRes",
+              "id": 303
+            },
+            "stIsTypingReq": {
+              "type": "isTypingReq",
+              "id": 308
+            },
+            "stIsTypingRes": {
+              "type": "isTypingRes",
+              "id": 309
+            },
+            "stUpdatePasswordReq": {
+              "type": "updatePasswordReq",
+              "id": 310
+            },
+            "stUpdatePasswordRes": {
+              "type": "updatePasswordRes",
+              "id": 311
+            },
+            "stLoginElseWhereNotificationReq": {
+              "type": "loginElseWhereNotificationReq",
+              "id": 312
+            },
+            "stLoginElseWhereNotificationRes": {
+              "type": "loginElseWhereNotificationRes",
+              "id": 313
+            },
+            "stCallInfoSyncReq": {
+              "type": "callInfoSyncReq",
+              "id": 314
+            },
+            "stCallInfoSyncRes": {
+              "type": "callInfoSyncRes",
+              "id": 315
+            },
+            "stIsAppInFocusReq": {
+              "type": "isAppInFocusReq",
+              "id": 316
+            },
+            "stIsAppInFocusRes": {
+              "type": "isAppInFocusRes",
+              "id": 317
+            },
+            "stGetStunTurnReq": {
+              "type": "getStunTurnReq",
+              "id": 318
+            },
+            "stGetStunTurnRes": {
+              "type": "getStunTurnRes",
+              "id": 319
+            },
+            "stSelfChatReq": {
+              "type": "chatReq",
+              "id": 320
+            },
+            "stSelfChatRes": {
+              "type": "chatRes",
+              "id": 321
+            },
+            "stSelfChatDeliveryReq": {
+              "type": "chatDeliveryReq",
+              "id": 322
+            },
+            "stSelfChatDeliveryRes": {
+              "type": "chatDeliveryRes",
+              "id": 323
+            },
+            "stSelfChatReadReq": {
+              "type": "chatReadReq",
+              "id": 324
+            },
+            "stSelfChatReadRes": {
+              "type": "chatReadRes",
+              "id": 325
+            },
+            "stSelfGroupCreatedReq": {
+              "type": "selfGroupCreatedReq",
+              "id": 326
+            },
+            "stSelfGroupCreatedRes": {
+              "type": "selfGroupCreatedRes",
+              "id": 327
+            },
+            "stSelfBlockGroupReq": {
+              "type": "blockGroupReq",
+              "id": 328
+            },
+            "stSelfBlockGroupRes": {
+              "type": "blockGroupRes",
+              "id": 329
+            },
+            "stSelfUnBlockGroupReq": {
+              "type": "unBlockGroupReq",
+              "id": 330
+            },
+            "stSelfUnBlockGroupRes": {
+              "type": "unBlockGroupRes",
+              "id": 331
+            },
+            "stSelfGroupChatReq": {
+              "type": "groupChatReq",
+              "id": 332
+            },
+            "stSelfGroupChatRes": {
+              "type": "groupChatRes",
+              "id": 333
+            },
+            "stSelfGroupChatDeliveryReq": {
+              "type": "groupChatDeliveryReq",
+              "id": 334
+            },
+            "stSelfGroupChatDeliveryRes": {
+              "type": "groupChatDeliveryRes",
+              "id": 335
+            },
+            "stSelfGroupChatReadReq": {
+              "type": "groupChatReadReq",
+              "id": 336
+            },
+            "stSelfGroupChatReadRes": {
+              "type": "groupChatReadRes",
+              "id": 337
+            },
+            "stDirectAVCallHoldUnHoldReq": {
+              "type": "directAVCallHoldUnHoldReq",
+              "id": 338
+            },
+            "stDirectAVCallHoldUnHoldRes": {
+              "type": "directAVCallHoldUnHoldRes",
+              "id": 339
+            },
+            "stDirectAVCallHoldUnHoldAckReq": {
+              "type": "directAVCallHoldUnHoldAckReq",
+              "id": 340
+            },
+            "stDirectAVCallHoldUnHoldAckRes": {
+              "type": "directAVCallHoldUnHoldAckRes",
+              "id": 341
+            },
+            "stDeleteDeviceReq": {
+              "type": "deleteDeviceReq",
+              "id": 342
+            },
+            "stDeleteDeviceRes": {
+              "type": "deleteDeviceRes",
+              "id": 343
+            },
+            "stDeleteUserReq": {
+              "type": "deleteUserReq",
+              "id": 344
+            },
+            "stDeleteUserRes": {
+              "type": "deleteUserRes",
+              "id": 345
+            },
+            "stReSendActivationCodeReq": {
+              "type": "reSendActivationCodeReq",
+              "id": 346
+            },
+            "stReSendActivationCodeRes": {
+              "type": "reSendActivationCodeRes",
+              "id": 347
+            },
+            "stSetCallRecFileNameReq": {
+              "type": "setCallRecFileNameReq",
+              "id": 348
+            },
+            "stSetCallRecFileNameRes": {
+              "type": "setCallRecFileNameRes",
+              "id": 349
+            }
+          }
+        },
+        "retCodes": {
+          "values": {
+            "E_UNKNOWN_RETURN_CODE": 0,
+            "E_200_OK": 1,
+            "E_202_OK": 2,
+            "E_401_UNAUTHORIZED": 3,
+            "E_409_NOTALLOWED": 4,
+            "E_500_INTERNALERR": 5,
+            "E_204_RESENDACTIVATIONCODE": 6,
+            "E_403_FORBIDDEN": 7,
+            "E_701_INACTIVE_OPCODE": 8,
+            "E_702_WRONG_OPCODE": 9,
+            "E_703_LIMIT_EXCEEDED": 10,
+            "E_499_USER_ALREADY_ATTACHED": 11,
+            "E_800_INVALID_APP_ID": 12,
+            "E_801_WRONG_APP_CREDENTIALS": 13,
+            "E_802_APP_ALREADY_CREATED": 14,
+            "E_803_USER_DEACTIVATED": 15,
+            "E_309_ANSWERED_ELSE_WHERE": 16,
+            "E_310_PREVIOUS_CALL_IN_PROGRESS": 17,
+            "E_100020_INSUFFICIENT_BALANCE": 18,
+            "E_100021_OTP_EXPIRED": 19,
+            "E_100022_WRONG_OTP": 20,
+            "E_100023_INVALID_REQUIRED_FIELD": 21,
+            "E_100024_NEW_OTP_GENERATED": 22,
+            "E_100025_SEND_SMS_FAILED": 23,
+            "E_100026_MDB_CONN_FAIL": 24,
+            "E_100027_MDB_GET_CREDIT_FAIL": 25,
+            "E_100028_CDB_GET_APP_USER_CNT_FAIL": 26,
+            "E_100029_GET_PRO_COST_API_FAIL": 27,
+            "E_100030_DEDUCT_CREDIT_API_FAIL": 28,
+            "E_100031_MDB_UPDATE_CREDIT_FAIL": 29,
+            "E_100032_HISTORY_DISABLED": 30
+          }
+        },
+        "commHdrs": {
+          "fields": {
+            "sMobNu": {
+              "rule": "required",
+              "type": "string",
+              "id": 1
+            },
+            "sClientId": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "ullTransId": {
+              "rule": "required",
+              "type": "uint64",
+              "id": 3
+            }
+          }
+        },
+        "protoType": {
+          "values": {
+            "E_CLIENT_MESSAGES": 0,
+            "E_SERVER_MESSAGES": 1,
+            "E_MEDICAL_EXTENSION_MESSAGES": 2,
+            "E_STREAMING_EXTENSION_MESSAGES": 3,
+            "E_CONF_CLIENT_MESSAGES": 4,
+            "E_CONF_SERVER_MESSAGES": 5
+          }
+        },
+        "sendDirection": {
+          "values": {
+            "E_UNKNOWN_SEND_DIRECTION": 0,
+            "E_TO_SERVER": 1,
+            "E_FROM_SERVER": 2
+          }
+        },
+        "sProfile": {
+          "fields": {
+            "sUserName": {
+              "type": "string",
+              "id": 1
+            },
+            "sPresenceStatusMsg": {
+              "type": "string",
+              "id": 2
+            },
+            "sProfilePicId": {
+              "type": "string",
+              "id": 3
+            },
+            "sUserId": {
+              "type": "string",
+              "id": 4
+            }
+          }
+        },
+        "promotionalType": {
+          "values": {
+            "E_UNKNOWN_PROMOTIONAL_TYPE": 0,
+            "E_TEXTPLAIN_PROMOTIONAL_TYPE": 1,
+            "E_IMAGE_PROMOTIONAL_TYPE": 2,
+            "E_VIDEO_PROMOTIONAL_TYPE": 3
+          }
+        },
+        "callType": {
+          "values": {
+            "E_UNKNOWN_CALL_TYPE": 0,
+            "E_VOICECALL": 1,
+            "E_VIDEOCALL": 2,
+            "E_LIVELOCATION": 3,
+            "E_PSTNCALL": 4
+          }
+        },
+        "osType": {
+          "values": {
+            "E_UNKNOWN_OS_TYPE": 0,
+            "E_ANDROID": 1,
+            "E_IOS": 2,
+            "E_IOS_DEV": 3,
+            "E_WEB": 4
+          }
+        },
+        "cpassPstnCredType": {
+          "values": {
+            "E_UNKNOWN_CPASS_PSTN_CRED_TYPE": 0,
+            "E_CUSTOM_SIP_PASSWORD": 1,
+            "E_DEFAULT_SIP_PASSWORD": 2
+          }
+        },
+        "appDetails": {
+          "fields": {
+            "sAppName": {
+              "rule": "required",
+              "type": "string",
+              "id": 1
+            },
+            "sCustomerId": {
+              "rule": "required",
+              "type": "string",
+              "id": 2
+            },
+            "sAppId": {
+              "rule": "required",
+              "type": "string",
+              "id": 3
+            },
+            "sAppSecret": {
+              "rule": "required",
+              "type": "string",
+              "id": 4
+            },
+            "eCpassPstnCredType": {
+              "type": "cpassPstnCredType",
+              "id": 5
+            },
+            "sDevMobNum": {
+              "type": "string",
+              "id": 6
+            },
+            "sDevPstnPassword": {
+              "type": "string",
+              "id": 7
+            }
+          }
+        }
+      }
+    }
+  }
+}
