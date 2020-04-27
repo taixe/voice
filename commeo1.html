@@ -1,6 +1,7 @@
+
 <html>
-  <head>
- <script src="https://developer.vox-cpaas.com/js/jquery.min.js"></script>
+ <head>
+        <script src="https://developer.vox-cpaas.com/js/jquery.min.js"></script>
 <script src="https://developer.vox-cpaas.com/js/bootstrap.min.js"></script>
 <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
 <script src="https://developer.vox-cpaas.com/js/protobuf.min.js"></script>
@@ -9,118 +10,110 @@
 <script src="https://developer.vox-cpaas.com/js/sha256.js"></script>
 <script src="https://developer.vox-cpaas.com/js/calmsdk-001.js"></script>
 <script src="https://developer.vox-cpaas.com/js/wrtc.js"></script>
-<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
-<style>
-.online {
-  height: 25px;
-  width: 25px;
-  background-color: #0f0;
-  border-radius: 50%;
-  display: inline-block;
-}
+   <script>
 
-.offline {
-  height: 25px;
-  width: 25px;
-  background-color: #f00;
-  border-radius: 50%;
-  display: inline-block;
-}
-    </style>
-    <script>
+    var callid = ''
+    function load() {
+      let config = {
+                     appId:"pid_cda42874_d665_43a0_a5b3_f1cc46721e05"  // <<-- insert your app id here.
+                   };
 
-     var callid = '', is_muted= false;
-
-     /* Initiate outbound call (call remote party) */
-     function start(destnum) {
-        document.getElementById("end").style.visibility = "visible";
-        document.getElementById("mute").style.visibility = "visible";
-        callid = CS.call.startPSTNCall(destnum, "localVideo", "remoteVideo", function(){});
-     }
-
-     /* End ongoing call */
-     function endCall() {
-        document.getElementById("end").style.visibility = "hidden";
-        document.getElementById("mute").style.visibility = "hidden";
-
-        CS.call.end(callid, "Bye", function(ret, resp) {
-          if (ret == 200)
-              console.log("call end successfully");
-        });
-     }
-
-     /* Mute call */
-     function mute() {
-       is_muted = !is_muted;
-       CS.call.mute(callid, is_muted, function(ret, resp) {
-          if ( ret == 200 ) 
-            console.log("Call muted successfully");
-       }); 
-
-
-       if(is_muted)
-         document.getElementById("mute").value="un-mute call"; 
-       else
-         document.getElementById("mute").value="mute call"; 
-     }
-
-     /* On document load initiate sdk initialization and login */
-     function pageload() { // Initializes the sdk and logs in the user.
-       document.getElementById("end").style.visibility = "hidden";
-       document.getElementById("mute").style.visibility = "hidden";
-       document.getElementById("start").style.visibility = "hidden";
-
-       CS.call.onMessage(handleCallFromIML);
-
-       // configuration parameters. 
-       let config = {
-                       appId:"pid_cda42874_d665_43a0_a5b3_f1cc46721e05" //<--- insert your project id here
-                    };
-
-        // callback called at the end of initialization to notify success or failure.
-        function callback(ret, resp){
-          if (ret == 200) {
-             console.log("SDK "+CS.version+" initialized ");
-
-             // Initiate login request
-             CS.login("conmeo1", "Abcde12345-", function(err, resp){
-               if (err == 200) {
-                 console.log("Login succesful");
-                 document.getElementById("start").style.visibility = "visible";
-               }
-             });
-          }
-         }
-        CS.initialize(config, callback);
-     }
-
-      function handleCallFromIML(msgType, resp) {
-        switch(msgType) {
-          case "OFFER":     /* incoming offer from remote party */
-          break;
-          case "PSTN-OFFER":
-            console.log("PSTN incoming call offer");
-          break;
-          case "RINGING":   /* ringing */
-          break;
-          case "ANSWERED":  /* call answer */
-          break;
-          case "END":       /* call end */
-            console.log("call end");
-            document.getElementById("end").style.visibility = "hidden";
-            document.getElementById("mute").style.visibility = "hidden";
-          break;
-          case "PSTN-END":
-            console.log("PSTN incoming call end");
-          break;
+      CS.initialize(config, function(ret, resp){
+        if (ret == 200) {
+          console.log("SDK initialized");
+          CS.chat.onMessage(receiveChat);
+          CS.call.onMessage(receiveCall);
         }
-      }
-    </script>
-  </head>
-<body onload=pageload()>
-  <input type="button" onclick="start('amen160@gmail.com')" id="start" value="Call amen160@gmail.com"></input>
-  <input type="button" onclick="endCall()" id="end" value="end call"></input>
-  <input type="button" onclick="mute()" id="mute" value="mute call"></input>
-  <video id="localVideo" autoplay muted style="display: none;"></video>
-  <video id="remoteVideo" autoplay width="200px" height="180px" style="display: none;"></video>
+      });
+    }
+
+   function login() {
+     CS.login("conmeo1", "Abcde12345-", function(err, resp){
+       if (err != 200) { 
+         alert("login failed with response code "+err+" reason "+resp);
+       } else {
+         alert("login successful");
+       }
+     });
+   }
+
+   function sendChat() {
+     var ret = CS.chat.sendMessage("+919603643259", "Hi", CS.chat.ChatType.TEXT_PLAIN, 1, function(err, resp) {
+       if (err != 200) {
+         alert("send chat failed with code "+err+" reason "+resp);
+       } else {
+         alert("send chat succeeded ");
+         console.dir(resp);
+       }
+     });
+   }
+
+
+   function receiveChat(type, resp) {
+     if (type == "NEW-MESSAGE") {
+       console.log("message type "+type);
+       console.log("from "+resp.remoteUser);
+       console.log("message id "+resp.id);
+       console.log("sent time "+resp.timestamp);
+       console.log("message "+resp.data);
+       console.log("message type "+resp.chattype);
+       console.log("thumbnail url "+resp.thumbnail);
+       alert("message from "+resp.remoteUser+": Message '"+resp.data+"'"); 
+     } else if (type == "ACCEPTED") {
+       console.log("message id "+resp.id+" is accepted to server"); 
+       alert("message id "+resp.id+" is accepted to server"); 
+     } else if (type == "DELIVERED") {
+       alert("message id "+resp.id+" is delivered to recipient"); 
+     } else if (type == "READ") {
+       alert("message id "+resp.id+" is read by recipient"); 
+     }
+   }
+
+   function makeCall(remUser) {
+     callId = CS.call.startCall(remUser, "localVideo", "remoteVideo", false/* true for video call, false for audio call*/, function(code, resp){
+       if (code != 200) { 
+         alert("call failed with response code "+code+" reason "+resp);
+       }
+     });
+   }
+
+   function receiveCall(msgType, resp) {
+     console.log("call event "+msgType+" received");
+
+     switch(msgType) {
+       case "OFFER":  /* direct incoming audio video offer */
+         if (resp.isVideoCall) 
+           alert("Incoming video call from "+resp.caller );
+         else
+           alert("Incoming audio call from "+resp.caller );
+         CS.call.answer(resp.callId, "localVideo", "remoteVideo", function(ret, resp){console.log("ret "+ret);});
+       break;
+       case "PSTN-OFFER":
+            alert("PSTN incoming call offer");
+       break;
+       case "ANSWERED":  /* direct audio video answer */
+         alert("call answer");
+       break;
+       case "END":  /* direct audio video end */
+         alert("call end");
+       break;
+       case "RINGING":  /* Remote end ringing*/
+         alert("ringing");
+       break;
+       case "PSTN-END":
+            alert("PSTN incoming call end");
+        break;
+     }
+   }
+
+   </script>
+ </head>
+<body onload="load()">
+ <input type="button" onclick="login()" value="Login"></input><br/>
+ <input type="button" onclick="makeCall('test1')" value="Call"></input><br/>
+ Local view
+ <video id="localVideo" autoplay muted width="200px" height="180px" ></video><br />
+ Remote view
+ <video id="remoteVideo" autoplay width="200px" height="180px" ></video>
 </body>
+</html>
