@@ -435,6 +435,10 @@
   };
 
   var send_msg = function(obj, is_provisional, evtype, json_body) {
+    console.log("send_msg: "+ obj)
+    console.log("is_provisional: "+ is_provisional)
+    console.log("evtype: "+ evtype)
+    console.log("json_body: "+ json_body)
     var bodyBuffer = obj.proto_msg.encode(obj.proto_msg.create(json_body)).finish();
     
     var tmp = new ArrayBuffer(10+bodyBuffer.length);
@@ -449,7 +453,7 @@
     }
 
     var body = tmp;
-
+    console.log("body: "+ body)
     if (obj.connectionState != ConnectionStates["connected"] && !is_provisional) {
       obj.msg_queue.push({"is_provisional":is_provisional, "body":body});
     } else {
@@ -502,6 +506,7 @@
     if (window.CS.appId){
       payload.stLoginReq.sAppDetails = {sAppName:'', sCustomerId:'', sAppId:window.CS.appId, sAppSecret:''};
     }
+    console.log("login: " + obj)
     send_msg(obj, true, obj.proto_msgType.values.E_LOGIN_RQT, payload);
   };
 
@@ -1528,33 +1533,33 @@ function uuidv4() {
     this.OAuthToken = OAuthToken;
     //this.pushToken = pushToken;
 
-    try{
+    // try{
 
-      OneSignal.push(["addListenerForNotificationOpened", function(data) {
-       	console.log("Received NotificationOpened:");
-       	console.log(data);
+    //   OneSignal.push(["addListenerForNotificationOpened", function(data) {
+    //    	console.log("Received NotificationOpened:");
+    //    	console.log(data);
 	
-      const promiseChain = clients.matchAll({
-        type: 'window',
-        includeUncontrolled: true
-      })
-      .then((windowClients) => {
-        let matchingClient = null;
+    //   const promiseChain = clients.matchAll({
+    //     type: 'window',
+    //     includeUncontrolled: true
+    //   })
+    //   .then((windowClients) => {
+    //     let matchingClient = null;
 
-        for (let i = 0; i < windowClients.length; i++) {
-          const windowClient = windowClients[i];
-          console.log(winowClient);
-        }
+    //     for (let i = 0; i < windowClients.length; i++) {
+    //       const windowClient = windowClients[i];
+    //       console.log(winowClient);
+    //     }
 
-      });
+    //   });
 
-      event.waitUntil(promiseChain);
+    //   event.waitUntil(promiseChain);
 
-      }]);
-    }catch(e){
-     console.log("one signal error "+e.message);
-    }finally{
-    };
+    //   }]);
+    // }catch(e){
+    //  console.log("one signal error "+e.message);
+    // }finally{
+    // };
 
     login(this, cb);
 
