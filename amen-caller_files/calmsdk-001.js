@@ -397,8 +397,10 @@
 
   // ### IO apis
   var send_on_socket = function(obj, body) {
-    if(obj.ws.readyState == 1)
+    if(obj.ws.readyState == 1){
+      console.log("send_on_socket: " , send_on_socket)
       obj.ws.send(body.body);
+    }
     else {
       console.log("ws send failed connection state: "+obj.ws.readyState);
     }
