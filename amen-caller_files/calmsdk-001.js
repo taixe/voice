@@ -535,6 +535,7 @@
 
 
   var iml_reentrant = function(obj, buf) {
+    console.log("on ",obj)
      switch (__rcvState) {
       case 0: { //Header
         if (__rcvBuffLen + buf.byteLength >= HDR_LEN) {
