@@ -1173,6 +1173,7 @@ function uuidv4() {
 
   var loadProto = function (obj){
     protobuf.load("/res/iml.json", function(err, root) {
+      console.log("root: ",root)
       if (err) throw err;
       obj.proto_root         = root;
       obj.proto_msg          = root.lookup("msg");
