@@ -611,7 +611,7 @@
         obj.connectionState = ConnectionStates["connected"];
 	obj.reconnectTimeout = 300;
 
-        console.log("websocket connected");
+        console.log("websocket connected 1");
         obj.connReady = true;
         if(obj.localUser != null && obj.OAuthToken != null) {
           if(obj.loggedin = true) {
