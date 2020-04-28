@@ -436,7 +436,7 @@
 
   var send_msg = function(obj, is_provisional, evtype, json_body) {
     console.log("send_msg1: "+ JSON.stringify(obj))
-    console.log("is_provisional: "+ is_provisional)
+    console.log("is_provisional1: "+ is_provisional)
     console.log("evtype: "+ evtype)
     console.log("json_body1: "+ JSON.stringify(json_body) )
     var bodyBuffer = obj.proto_msg.encode(obj.proto_msg.create(json_body)).finish();
