@@ -435,6 +435,7 @@
   };
 
   var send_msg = function(obj, is_provisional, evtype, json_body) {
+     console.log("=============>")
     console.log("send_msg1: "+ JSON.stringify(obj))
     console.log("is_provisional1: "+ is_provisional)
     console.log("evtype: "+ evtype)
