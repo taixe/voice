@@ -1,0 +1,119 @@
+
+<!-- saved from url=(0049)https://docs.vox-cpaas.com/delme/amen-callee.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="./amen-callee_files/jquery.min.js"></script>
+<script src="./amen-callee_files/bootstrap.min.js"></script>
+<script src="./amen-callee_files/adapter-latest.js"></script>
+<script src="./amen-callee_files/protobuf.min.js"></script>
+<script src="./amen-callee_files/aws-sdk-2.154.0.min.js"></script>
+<script src="./amen-callee_files/OneSignalSDK.js" async=""></script>
+<script src="./amen-callee_files/sha256.js"></script>
+<script src="./amen-callee_files/calmsdk-001.js"></script>
+<script src="./amen-callee_files/wrtc.js"></script>
+   <script>
+
+    var callid = ''
+    function load() {
+      let config = {
+                     appId:"pid_cda42874_d665_43a0_a5b3_f1cc46721e05"  // <<-- insert your app id here.
+                   };
+
+      CS.initialize(config, function(ret, resp){
+        if (ret == 200) {
+          console.log("SDK initialized");
+          CS.chat.onMessage(receiveChat);
+          CS.call.onMessage(receiveCall);
+        }
+      });
+    }
+
+   function login() {
+     CS.login("conmeo1", "Abcde12345-", function(err, resp){
+       if (err != 200) { 
+         alert("login failed with response code "+err+" reason "+resp);
+       } else {
+         alert("login successful");
+       }
+     });
+   }
+
+   function sendChat() {
+     var ret = CS.chat.sendMessage("+919603643259", "Hi", CS.chat.ChatType.TEXT_PLAIN, 1, function(err, resp) {
+       if (err != 200) {
+         alert("send chat failed with code "+err+" reason "+resp);
+       } else {
+         alert("send chat succeeded ");
+         console.dir(resp);
+       }
+     });
+   }
+
+
+   function receiveChat(type, resp) {
+     if (type == "NEW-MESSAGE") {
+       console.log("message type "+type);
+       console.log("from "+resp.remoteUser);
+       console.log("message id "+resp.id);
+       console.log("sent time "+resp.timestamp);
+       console.log("message "+resp.data);
+       console.log("message type "+resp.chattype);
+       console.log("thumbnail url "+resp.thumbnail);
+       alert("message from "+resp.remoteUser+": Message '"+resp.data+"'"); 
+     } else if (type == "ACCEPTED") {
+       console.log("message id "+resp.id+" is accepted to server"); 
+       alert("message id "+resp.id+" is accepted to server"); 
+     } else if (type == "DELIVERED") {
+       alert("message id "+resp.id+" is delivered to recipient"); 
+     } else if (type == "READ") {
+       alert("message id "+resp.id+" is read by recipient"); 
+     }
+   }
+
+   function makeCall(remUser) {
+     callId = CS.call.startCall(remUser, "localVideo", "remoteVideo", false/* true for video call, false for audio call*/, function(code, resp){
+       if (code != 200) { 
+         alert("call failed with response code "+code+" reason "+resp);
+       }
+     });
+   }
+
+   function receiveCall(msgType, resp) {
+     console.log("call event "+msgType+" received");
+
+     switch(msgType) {
+       case "OFFER":  /* direct incoming audio video offer */
+         if (resp.isVideoCall) 
+           alert("Incoming video call from "+resp.caller );
+         else
+           alert("Incoming audio call from "+resp.caller );
+         CS.call.answer(resp.callId, "localVideo", "remoteVideo", function(ret, resp){console.log("ret "+ret);});
+       break;
+       case "PSTN-OFFER":
+            alert("PSTN incoming call offer");
+       break;
+       case "ANSWERED":  /* direct audio video answer */
+         alert("call answer");
+       break;
+       case "END":  /* direct audio video end */
+         alert("call end");
+       break;
+       case "RINGING":  /* Remote end ringing*/
+         alert("ringing");
+       break;
+       case "PSTN-END":
+            alert("PSTN incoming call end");
+        break;
+     }
+   }
+
+   </script>
+ <script src="./amen-callee_files/OneSignalPageSDKES6.js" async=""></script></head>
+<body onload="load()" data-gr-c-s-loaded="true">
+ <input type="button" onclick="login()" value="Login"><br>
+ <input type="button" onclick="makeCall(&#39;test1&#39;)" value="Call"><br>
+ Local view
+ <video id="localVideo" autoplay="" muted="" width="200px" height="180px"></video><br>
+ Remote view
+ <video id="remoteVideo" autoplay="" width="200px" height="180px"></video>
+
+</body></html>
