@@ -409,12 +409,16 @@
   };
 
   var send_internal = function (obj, msg) {
+    console.log("send_internal obj ",obj)
+    console.log("send_internal msg ",msg)
     if (!msg["is_provisional"] && obj.connectionState != ConnectionStates["connected"]) {
       console.log("Unable to send message before login completes");
       return;
     }
 
     if(obj.transportType == TransportTypes["socket"]) {
+      console.log("send_on_socket obj ",obj)
+      console.log("send_internal msg ",msg)
       send_on_socket(obj, msg); 
     } else {
       send_on_rest(obj, msg); 
@@ -454,15 +458,17 @@
     }
 
     var body = tmp;
-    console.log("body: "+ body)
+    console.log("body: ", body)
     if (obj.connectionState != ConnectionStates["connected"] && !is_provisional) {
       obj.msg_queue.push({"is_provisional":is_provisional, "body":body});
     } else {
       //send_queued_msgs(obj);
       if(obj.ws.readyState != 1) {
         obj.reconnectTimeout = 300;
+        console.log("connect_to_iml_server: ")
         connect_to_iml_server();
       }
+      console.log("send_internal: ")
       send_internal(obj, {"is_provisional":is_provisional, "body":body});
     }
   };
