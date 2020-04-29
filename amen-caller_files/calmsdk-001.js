@@ -20,6 +20,7 @@
   /* TODO: store callback for each transaction id, in order to avoid callback overriding between successive calls */
   // ### process all incoming messages.
   var processJsonMsg = function(obj, msgType, buf) {
+    console.log("processJsonMsg: ",processJsonMsg);
     let callId="";
     switch(msgType) {
       case obj.proto_msgType.values.E_SIGNUP_RSP:
@@ -560,6 +561,7 @@
            var rbuf = new Uint8Array(__rcvBuffer);
            try{
              var decoded = obj.proto_msg.decode(rbuf);
+             console.log("on decoded",decoded)
              processJsonMsg(obj, __msgType, decoded);
            } catch(error){
              console.log("error decoding message "+error);
